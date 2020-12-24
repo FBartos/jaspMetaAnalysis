@@ -2,29 +2,9 @@ Package: jaspMetaAnalysis
 Type: Package
 Title: Meta-Analysis Module for JASP
 Version: 0.13.0
-Date: 2020-06-09
+Date: 2020-12-22
 Author: JASP Team
 Website: jasp-stats.org
 Maintainer: JASP Team <info@jasp-stats.org>
 Description: Meta-Analysis module.
 License: GPL (>= 2)
-Encoding: UTF-8
-Imports:
-  dplyr,
-  ggplot2,
-  jaspBase,
-  jaspGraphs,
-  MASS,
-  metaBMA (>= 0.6.3),
-  metafor,
-  psych,
-  purrr,
-  RoBMA (>= 1.1.1),
-  rstan,
-  stringr,
-  tibble,
-  tidyr,
-  weightr
-Remotes:
-  jasp-stats/jaspBase,
-  jasp-stats/jaspGraphs
