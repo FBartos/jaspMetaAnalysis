@@ -2414,7 +2414,7 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisMultilevelMultivariate|"
 msgid "Correlation matrix file"
-msgstr ""
+msgstr "Korrelationsmatrix-Datei"
 
 msgctxt "ClassicalMetaAnalysisMultilevelMultivariate|"
 msgid ""
@@ -2423,15 +2423,20 @@ msgid ""
 "that map the matrix entries to the 'Grouping Factor' (the names cannot start "
 "with a number). Available when the random effect type is 'Known correlation'."
 msgstr ""
+"CSV-Datei mit der bekannten Korrelationsmatrix für die "
+"Zufallseffektstruktur. Die erste Zeile und die erste Spalte der Datei müssen "
+"Namen enthalten, die die Matrixeinträge dem 'Gruppenfaktor' zuordnen (die "
+"Namen dürfen nicht mit einer Zahl beginnen). Auswählbar, wenn der zufällige "
+"Effekttyp 'Bekannte Korrelation' ist."
 
 #, qt-format
 msgctxt "EffectSizeComputation|"
 msgid "Step %1"
-msgstr ""
+msgstr "Schritt %1"
 
 msgctxt "EffectSizeComputation|"
 msgid "Independent groups"
-msgstr ""
+msgstr "Unabhängige Gruppen"
 
 msgctxt "EffectSizeComputation|"
 msgid "Variable association"
@@ -2455,7 +2460,7 @@ msgstr ""
 
 msgctxt "EffectSizeComputation|"
 msgid "Quantitative"
-msgstr ""
+msgstr "Quantitativ"
 
 msgctxt "EffectSizeComputation|"
 msgid "Binary"
@@ -2479,11 +2484,11 @@ msgstr ""
 
 msgctxt "EffectSizeComputation|"
 msgid "Partial correlation"
-msgstr ""
+msgstr "Partielle Korrelation"
 
 msgctxt "EffectSizeComputation|"
 msgid "Model fit"
-msgstr ""
+msgstr "Modellanpassung"
 
 msgctxt "EffectSizeComputation|"
 msgid "Heterozygosity"
@@ -3088,40 +3093,42 @@ msgstr ""
 
 msgctxt "EffectSizeComputation|"
 msgid "Options"
-msgstr ""
+msgstr "Optionen"
 
+#, fuzzy
 msgctxt "EffectSizeComputation|"
 msgid "Compute sampling variance"
-msgstr ""
+msgstr "Stichprobenvarianz berechnen"
 
 msgctxt "EffectSizeComputation|"
 msgid "Computed Columns Names"
-msgstr ""
+msgstr "Namen berechneter Spalten"
 
-#, fuzzy
 msgctxt "EffectSizeComputation|"
 msgid "Effect size"
 msgstr "Effektstärke"
 
 msgctxt "EffectSizeComputation|"
 msgid "Standard error"
-msgstr ""
+msgstr "Standardfehler"
 
+#, fuzzy
 msgctxt "EffectSizeComputation|"
 msgid "Sampling variance"
-msgstr ""
+msgstr "Stichprobenvarianz"
 
 msgctxt "EffectSizeComputation|"
 msgid "Effect size type"
-msgstr ""
+msgstr "Typ der Effektstärke"
 
 msgctxt "FunnelPlot|"
 msgid ""
 "Kossmeier, M., Tran, U. S., & Voracek, M. (2020). Power-enhanced funnel "
 "plots for meta-analysis. Zeitschrift für Psychologie, 228(1)."
 msgstr ""
+"Kossmeier, M., Tran, U. S., & Voracek, M. (2020). Power-enhanced funnel "
+"plots for meta-analysis. Zeitschrift für Psychologie, 228(1)."
 
-#, fuzzy
 msgctxt "FunnelPlot|"
 msgid "Effect Size"
 msgstr "Effektstärke"
@@ -3130,7 +3137,6 @@ msgctxt "FunnelPlot|"
 msgid "Variable containing the observed effect sizes."
 msgstr "Variable, die die beobachteten Effektstärken enthält."
 
-#, fuzzy
 msgctxt "FunnelPlot|"
 msgid "Effect Size Standard Error"
 msgstr "Effektstärke Standardfehler"
@@ -3143,7 +3149,7 @@ msgstr ""
 
 msgctxt "FunnelPlot|"
 msgid "Study Label"
-msgstr ""
+msgstr "Studienbezeichnung"
 
 #, fuzzy
 msgctxt "FunnelPlot|"
@@ -3156,93 +3162,101 @@ msgstr ""
 
 msgctxt "FunnelPlot|"
 msgid "Split"
-msgstr ""
+msgstr "Aufteilung"
 
 msgctxt "FunnelPlot|"
 msgid ""
 "Variable used to split the funnel plot into separate groups or categories."
 msgstr ""
+"Variable zur Aufteilung des Trichterdiagramms in verschiedene Gruppen oder "
+"Kategorien."
 
 msgctxt "FunnelPlot|"
 msgid "Funnel under H₀"
-msgstr ""
+msgstr "Trichter unter H₀"
 
 msgctxt "FunnelPlot|"
 msgid "Specify the funnel plot under the null hypothesis."
-msgstr ""
+msgstr "Angabe des Trichterdiagramms unter der Nullhypothese."
 
-#, fuzzy
 msgctxt "FunnelPlot|"
 msgid "Parameters"
 msgstr "Parameter"
 
 msgctxt "FunnelPlot|"
 msgid "μ"
-msgstr ""
+msgstr "μ"
 
 msgctxt "FunnelPlot|"
 msgid "Fixed value for the mean effect size under the null hypothesis."
-msgstr ""
+msgstr "Fester Wert für die mittlere Effektstärke unter der Nullhypothese."
 
 msgctxt "FunnelPlot|"
 msgid "𝜏"
-msgstr ""
+msgstr "𝜏"
 
 msgctxt "FunnelPlot|"
 msgid ""
 "Fixed value for 𝜏, representing the heterogeneity under the null hypothesis."
 msgstr ""
+"Fester Wert für 𝜏, der die Heterogenität unter der Nullhypothese darstellt."
 
 msgctxt "FunnelPlot|"
 msgid "Fill colors"
-msgstr ""
+msgstr "Füllfarben"
 
 msgctxt "FunnelPlot|"
 msgid ""
 "Fill the funnel plot's prediction intervals under the null hypothesis with "
 "different colors."
 msgstr ""
+"Fülle die Vorhersageintervalle des Trichterdiagramms unter der Nullhypothese "
+"mit verschiedenen Farben."
 
 msgctxt "FunnelPlot|"
 msgid "Line type"
-msgstr ""
+msgstr "Linientyp"
 
 msgctxt "FunnelPlot|"
 msgid ""
 "Set the type of line of the funnel plot's prediction intervals under the "
 "null hypothesis."
 msgstr ""
+"Einstellen der Art der Linien für die Vorhersageintervalle des "
+"Trichterdiagramms unter der Nullhypothese."
 
-#, fuzzy
 msgctxt "FunnelPlot|"
 msgid "None"
 msgstr "Keine"
 
 msgctxt "FunnelPlot|"
 msgid "Solid"
-msgstr ""
+msgstr "Durchgezogen"
 
 msgctxt "FunnelPlot|"
 msgid "Dashed"
-msgstr ""
+msgstr "Gestrichelt"
 
 msgctxt "FunnelPlot|"
 msgid "Dotted"
-msgstr ""
+msgstr "Gepunktet"
 
 msgctxt "FunnelPlot|"
 msgid "Funnel under H₁"
-msgstr ""
+msgstr "Trichter unter H₁"
 
 msgctxt "FunnelPlot|"
 msgid "Estimate or specify the funnel plot under the alternative hypothesis."
 msgstr ""
+"Schätzen oder Angabe des Trichterdiagramms unter der Alternativhypothese."
 
 msgctxt "FunnelPlot|"
 msgid ""
 "Choose whether to estimate or manually fix the parameters for the funnel "
 "plot under the alternative hypothesis."
 msgstr ""
+"Auswahl zwischen Schätzung oder manueller Fixierung der Parameter für das "
+"Trichterdiagramm unter der Alternativhypothese."
 
 #, fuzzy
 msgctxt "FunnelPlot|"
@@ -3410,9 +3424,10 @@ msgctxt "FunnelPlot|"
 msgid "Outside H₁"
 msgstr ""
 
+#, fuzzy
 msgctxt "FunnelPlot|"
 msgid "Color"
-msgstr ""
+msgstr "Farbe"
 
 msgctxt "FunnelPlot|"
 msgid ""
@@ -3420,9 +3435,10 @@ msgid ""
 "selected variable."
 msgstr ""
 
+#, fuzzy
 msgctxt "FunnelPlot|"
 msgid "Shape"
-msgstr ""
+msgstr "Form"
 
 msgctxt "FunnelPlot|"
 msgid ""
@@ -3536,13 +3552,15 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Weighted estimation"
-msgstr ""
+msgstr "Gewichtete Schätzung"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid ""
 "Perform weighted estimation using inverse-variance weights. Uncheck for "
 "unweighted estimation."
 msgstr ""
+"Gewichtete Schätzung mit Gewichtung nach inverser Varianz ausführen. "
+"Deaktivieren für ungewichtete Schätzung."
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Clustering"
@@ -3550,17 +3568,19 @@ msgstr "Clustering"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Use clubSandwich"
-msgstr ""
+msgstr "clubSandwich benutzen"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid ""
 "Use the clubSandwich package for robust variance estimation in clustered "
 "data. Enabled when a clustering variable is specified."
 msgstr ""
+"Verwendung des clubSandwich-Pakets für robuste Varianzschätzung in "
+"geclusterten Daten. Aktiviert, wenn eine Clustervariable angegeben ist."
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Small sample correction"
-msgstr ""
+msgstr "Korrektur für kleine Stichprobe"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Apply a small-sample correction to the clustered standard errors."
@@ -3568,11 +3588,11 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Random Effects / Modele Structure"
-msgstr ""
+msgstr "Zufällige Effekte / Modellstruktur"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Use sparse matricies"
-msgstr ""
+msgstr "Dünnbesetzte Matrizen verwenden"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid ""
@@ -3580,16 +3600,21 @@ msgid ""
 "large datasets or complex random effects structures. Available in multilevel/"
 "multivariate meta-analysis."
 msgstr ""
+"Verwenden Sie dünnbesetzte Matrixdarstellungen, um Berechnungen in Modellen "
+"mit großen Datensätzen oder komplexen zufälligen Effektstrukturen zu "
+"beschleunigen. Verfügbar in multilevel/multivariate Metaanalyse."
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Compute covariance matrix"
-msgstr ""
+msgstr "Kovarianzmatrix berechnen"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid ""
 "Compute the covariance matrix of the parameter estimates. Available in "
 "multilevel/multivariate meta-analysis."
 msgstr ""
+"Berechnung der Kovarianzmatrix der Parameterschätzungen. Verfügbar in "
+"multilevel/multivariater Metaanalyse."
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Fix Parameters"
@@ -3607,7 +3632,6 @@ msgid ""
 "multivariate meta-analysis can be fixed via the 'Extend metafor call' option."
 msgstr ""
 
-#, fuzzy
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Weights"
 msgstr "Gewichte"
@@ -3875,33 +3899,37 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Model Variables"
-msgstr ""
+msgstr "Modellvariablen"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Selected Variable"
-msgstr ""
+msgstr "Ausgewählte Variable"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Variable to be visualized on the x-axis."
-msgstr ""
+msgstr "Variable, die auf der X-Achse visualisiert wird."
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Separate Lines"
-msgstr ""
+msgstr "Verschiedene Linien"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid ""
 "Variable(s) according to which predictions are split across different lines."
 msgstr ""
+"Variable(n), nach denen Vorhersagen auf unterschiedliche Linien aufgeteilt "
+"werden."
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Separate Plots"
-msgstr ""
+msgstr "Separate Diagramme"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid ""
 "Variable(s) according to which predictions are split across different plots."
 msgstr ""
+"Variable(n), nach denen Vorhersagen auf unterschiedliche Diagramme "
+"aufgeteilt werden."
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "SD factor covariates"
@@ -3923,14 +3951,13 @@ msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Options for determining the size of the observed estimates."
 msgstr ""
 
-#, fuzzy
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Weight"
 msgstr "Gewicht"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Inverse variance"
-msgstr ""
+msgstr "Inverse Varianz"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Equal"
@@ -3938,41 +3965,44 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Relative size"
-msgstr ""
+msgstr "Relative Größe"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Set the relative size of the observed estimates."
-msgstr ""
+msgstr "Einstellen der relativen Größe der beobachteten Schätzungen."
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Transparency"
-msgstr ""
+msgstr "Transparenz"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Set the transparency of the observed estimates."
-msgstr ""
+msgstr "Einstellen der Transparenz der beobachteten Schätzungen."
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Jitter"
-msgstr ""
+msgstr "Verwackeln"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid ""
 "Set the degree of x-coordinate jitter of the observed estimates. Available "
 "when the x-axis variable is nominal."
 msgstr ""
+"Einstellen des Grads von Verwacklung der X-Koordinate der beobachteten "
+"Schätzungen. Auswählbar wenn die X-Achsen-Variable nominal ist."
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
-msgid "Condifence intervals"
-msgstr ""
+msgid "Confidence intervals"
+msgstr "Konfidenzintervalle"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Include confidence intervals of the estimated effect sizes."
-msgstr ""
+msgstr "Konfidenzintervalle der geschätzten Effektstärken einbeziehen."
 
+#, fuzzy
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Prediction intervals"
-msgstr ""
+msgstr "Vorhersageintervalle"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Include prediction intervals of the estimated effect sizes."
@@ -4231,9 +4261,10 @@ msgid ""
 "squared (𝜏²)."
 msgstr ""
 
+#, fuzzy
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid "𝜏"
-msgstr ""
+msgstr "𝜏"
 
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid "𝜏²"
@@ -4362,9 +4393,10 @@ msgid ""
 "effect size meta-regression is specified."
 msgstr ""
 
+#, fuzzy
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Model Variables"
-msgstr ""
+msgstr "Modellvariablen"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Select variables for which the estimated marginal means are visualized."
@@ -4481,11 +4513,11 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Prediction intervals"
-msgstr ""
+msgstr "Vorhersageintervalle"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid ""
@@ -4495,7 +4527,7 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Estimates and confidence intervals"
-msgstr ""
+msgstr "Schätzungen und Konfidenzintervalle"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid ""
@@ -4523,36 +4555,35 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Color"
-msgstr ""
+msgstr "Farbe"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Shape"
-msgstr ""
+msgstr "Form"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Relative Size"
-msgstr ""
+msgstr "Relative Größe"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Adjust the relative size of the forest plot components."
 msgstr ""
 
-#, fuzzy
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Estimates"
 msgstr "Schätzungen"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Axis labels"
-msgstr ""
+msgstr "Achsenbeschriftungen"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Row"
-msgstr ""
+msgstr "Zeile"
 
 msgctxt "ClassicalMetaAnalysisForestPlot|"
 msgid "Left panel"
@@ -4744,9 +4775,10 @@ msgid ""
 "performing multilevel/multivariate meta-analysis."
 msgstr ""
 
+#, fuzzy
 msgctxt "ClassicalMetaAnalysisStatistics|"
 msgid "𝜏"
-msgstr ""
+msgstr "𝜏"
 
 msgctxt "ClassicalMetaAnalysisStatistics|"
 msgid "Include 𝜏, the square root of the estimated between-study variance."
@@ -4846,9 +4878,10 @@ msgctxt "ClassicalMetaAnalysisStatistics|"
 msgid "Include confidence intervals in the tabular output."
 msgstr ""
 
+#, fuzzy
 msgctxt "ClassicalMetaAnalysisStatistics|"
 msgid "Prediction intervals"
-msgstr ""
+msgstr "Vorhersageintervalle"
 
 msgctxt "ClassicalMetaAnalysisStatistics|"
 msgid "Include prediction intervals in the tabular output."
@@ -4939,3 +4972,48 @@ msgid ""
 "Please, redo the analysis with the updated module or download the 0.19.1 "
 "version of JASP to rerun or edit the analysis."
 msgstr ""
+
+#, fuzzy
+msgctxt "PredictionPerformanceInference|"
+msgid "Method"
+msgstr "Methode"
+
+#, fuzzy
+msgctxt "PredictionPerformanceInference|"
+msgid "Fixed Effects"
+msgstr "Feste Effekte"
+
+#, fuzzy
+msgctxt "PredictionPerformanceInference|"
+msgid "Maximum Likelihood"
+msgstr "Maximum-Likelihood"
+
+#, fuzzy
+msgctxt "PredictionPerformanceInference|"
+msgid "Restricted ML"
+msgstr "Begrenztes ML"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "DerSimonian-Laird"
+msgstr "DerSimonian-Laird"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Hedges"
+msgstr "Hedges"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Hunter-Schmidt"
+msgstr "Hunter-Schmidt"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Sidik-Jonkman"
+msgstr "Sidik-Jonkman"
+
+#, fuzzy
+msgctxt "PredictionPerformanceInference|"
+msgid "Empirical Bayes"
+msgstr "Empirische Bayes"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Paule-Mandel"
+msgstr "Paule-Mandel"

@@ -334,7 +334,7 @@ msgstr "Efectos aleatorios"
 
 msgctxt "BayesianMetaAnalysisInference|"
 msgid "Model averaging"
-msgstr "Modelo medio"
+msgstr "Facer a media do Modelo"
 
 msgctxt "BayesianMetaAnalysisInference|"
 msgid "Constrained random effects"
@@ -4116,7 +4116,7 @@ msgstr ""
 "Dispoñible cando o eixe x é nominal."
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
-msgid "Condifence intervals"
+msgid "Confidence intervals"
 msgstr "Intervalos de confianza"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
@@ -5220,3 +5220,43 @@ msgstr ""
 "versión antiga de JASP e as opcións da análise xa non son compatibles. Por "
 "favor, volve facer a análise co módulo actualizado, ou descarga a versión "
 "0.19.1 de JASP para volver executar ou editar a análise."
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Method"
+msgstr "Método"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Fixed Effects"
+msgstr "Efectos Fixos"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Maximum Likelihood"
+msgstr "Máxima-Verosimilitude"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Restricted ML"
+msgstr "MV restrinxida"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "DerSimonian-Laird"
+msgstr "DerSimonian-Laird"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Hedges"
+msgstr "Hedges"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Hunter-Schmidt"
+msgstr "Hunter-Schmidt"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Sidik-Jonkman"
+msgstr "Sidik-Jonkman"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Empirical Bayes"
+msgstr "Bayes Empírico"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Paule-Mandel"
+msgstr "Paule-Mandel"

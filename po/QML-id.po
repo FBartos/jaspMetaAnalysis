@@ -3955,9 +3955,10 @@ msgid ""
 "when the x-axis variable is nominal."
 msgstr ""
 
+#, fuzzy
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
-msgid "Condifence intervals"
-msgstr ""
+msgid "Confidence intervals"
+msgstr "Interval kepercayaan diri"
 
 msgctxt "ClassicalMetaAnalysisBubblePlot|"
 msgid "Include confidence intervals of the estimated effect sizes."
@@ -4922,4 +4923,46 @@ msgid ""
 "older version of JASP and the analysis options are not longer compatible. "
 "Please, redo the analysis with the updated module or download the 0.19.1 "
 "version of JASP to rerun or edit the analysis."
+msgstr ""
+
+#, fuzzy
+msgctxt "PredictionPerformanceInference|"
+msgid "Method"
+msgstr "Metode"
+
+#, fuzzy
+msgctxt "PredictionPerformanceInference|"
+msgid "Fixed Effects"
+msgstr "Efek Tetap"
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Maximum Likelihood"
+msgstr ""
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Restricted ML"
+msgstr ""
+
+msgctxt "PredictionPerformanceInference|"
+msgid "DerSimonian-Laird"
+msgstr ""
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Hedges"
+msgstr ""
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Hunter-Schmidt"
+msgstr ""
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Sidik-Jonkman"
+msgstr ""
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Empirical Bayes"
+msgstr ""
+
+msgctxt "PredictionPerformanceInference|"
+msgid "Paule-Mandel"
 msgstr ""
