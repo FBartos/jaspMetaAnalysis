@@ -28,7 +28,7 @@ Section
 	columns:					1
 
 	info: qsTr("Advanced options for the meta-analysis, including optimization settings, clustering, and permutation tests.")
-	
+
 	property alias permutationTestChecked:		permutationTest.checked
 
 	Group
@@ -300,7 +300,7 @@ Section
 				info: qsTr("Set the maximum number of iterations for the optimizer. Available when using certain estimation or optimization methods.")
 				visible:	((method.value == "restrictedML" || method.value == "maximumLikelihood" || method.value == "empiricalBayes" ||
 							method.value == "pauleMandel" || method.value == "pauleMandelMu" || method.value == "qeneralizedQStatMu") && module == "metaAnalysis") ||
-							((optimizerMethod.value == "nlminb" || optimizerMethod.value == "Nelder-Mead" || optimizerMethod.value == "BFGS" || 
+							((optimizerMethod.value == "nlminb" || optimizerMethod.value == "Nelder-Mead" || optimizerMethod.value == "BFGS" ||
 							optimizerMethod.value == "nloptr" || optimizerMethod.value == "nlm") && module == "metaAnalysisMultilevelMultivariate")
 
 				IntegerField
@@ -505,7 +505,11 @@ Section
 		id:			advancedExtendMetaforCall
 		text:		qsTr("Extend metafor call")
 		checked:	false
-		info: qsTr("Allow adding custom arguments to the metafor function call. Consult the metafor R package documentation for the available commands (https://wviechtb.github.io/metafor/reference/rma.uni.html and https://wviechtb.github.io/metafor/reference/rma.mv.html).")
+		info: qsTr("Allow adding custom arguments to the metafor function call. Consult the metafor R package documentation for the available commands (for %1 meta-analysis %2 and %3 meta-analysis (multilevel/multivariate) %4).")
+			.arg("<a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>")
+			.arg("</a>")
+			.arg("<a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>")
+			.arg("</a>")
 	}
 
 	TextArea
