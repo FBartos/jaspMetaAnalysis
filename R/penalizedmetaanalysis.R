@@ -717,7 +717,7 @@ PenalizedMetaAnalysis <- function(jaspResults, dataset = NULL, options, ...) {
 }
 .pemaMessageMinESS        <- function(ESS, treshold) {
   gettextf(
-    "Low estimation accuracy -- The smallest Effective Sample Size (ESS) is %1$.2f < %2$1.0f. To increase accuracy please increase 'Iterations', or 'Adapt delta' in the Options section.",
+    "Low estimation accuracy -- The smallest Effective Sample Size (ESS) is %.2f < %1.0f. To increase accuracy please increase 'Iterations', or 'Adapt delta' in the Options section.",
     ESS,
     treshold
   )
