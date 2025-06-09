@@ -1,0 +1,127 @@
+name: "Copilot Setup Steps"
+
+# Allow testing of the setup steps from your repository's "Actions" tab.
+on: workflow_dispatch
+
+jobs:
+  # The job MUST be called `copilot-setup-steps` or it will not be picked up by Copilot.
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+
+    # Set the permissions to the lowest permissions possible needed for your steps.
+    # Copilot will be given its own token for its operations.
+    permissions:
+      # Clone the repository to install R dependencies
+      contents: read
+
+    # Environment variables for R package installation
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      R_REMOTES_UPGRADE: never
+      VDIFFR_RUN_TESTS: true
+      _R_CHECK_LENGTH_1_CONDITION_: TRUE
+      _R_CHECK_MATRIX_DATA_: TRUE
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+
+      - name: Install system dependencies for R packages
+        run: |
+          # System dependencies required for various R packages used in JASP
+          # ragg requires libharfbuzz-dev libfribidi-dev 
+          # credentials (dependency of usethis) requires libgit2-dev
+          # curl (dependency of usethis) requires libcurl4-openssl-dev
+          # libicu (dependency of igraph or stringi) requires libicu libicu-dev
+          sudo apt update
+          sudo apt install -y \
+            libharfbuzz-dev \
+            libfribidi-dev \
+            libgit2-dev \
+            libcurl4-openssl-dev \
+            libicu-dev \
+            libxml2-dev \
+            libssl-dev \
+            libfontconfig1-dev \
+            libfreetype6-dev \
+            libpng-dev \
+            libtiff5-dev \
+            libjpeg-dev
+        shell: bash
+
+      - name: Install JAGS
+        run: |
+          # JAGS is needed for Bayesian meta-analysis functionality
+          sudo apt install -y jags
+        shell: bash
+
+      - name: Cache R packages
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('DESCRIPTION', 'renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-r-
+
+      - name: Set up R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::rcmdcheck
+            github::jasp-stats/jaspTools
+            any::testthat
+            any::devtools
+          needs: check
+          cache-version: 3
+
+      - name: Install igraph from source
+        run: |
+          # Install igraph from source to avoid binary compatibility issues
+          install.packages("igraph", type = "source", repos = "https://cloud.r-project.org/")
+        shell: Rscript {0}
+
+      - name: Setup jaspTools
+        run: |
+          # Initialize jaspTools for JASP module development
+          jaspTools::setupJaspTools()
+        shell: Rscript {0}
+
+      - name: Install additional meta-analysis dependencies
+        run: |
+          # Install common packages used in meta-analysis that might not be in DESCRIPTION
+          install.packages(c(
+            "metafor",
+            "meta", 
+            "RoBMA",
+            "BayesTools",
+            "bridgesampling"
+          ), repos = "https://cloud.r-project.org/")
+        shell: Rscript {0}
+
+      - name: Verify setup
+        run: |
+          # Verify that key packages are available
+          cat("R version:", R.version.string, "\n")
+          cat("Available packages:\n")
+          installed <- installed.packages()[, "Package"]
+          key_packages <- c("jaspTools", "metafor", "RoBMA", "testthat")
+          for (pkg in key_packages) {
+            if (pkg %in% installed) {
+              cat("✓", pkg, "\n")
+            } else {
+              cat("✗", pkg, "(missing)\n")
+            }
+          }
+          
+          # Test JAGS availability
+          if (system("jags -help", ignore.stdout = TRUE, ignore.stderr = TRUE) == 0) {
+            cat("✓ JAGS available\n")
+          } else {
+            cat("✗ JAGS not available\n")
+          }
+        shell: Rscript {0}
