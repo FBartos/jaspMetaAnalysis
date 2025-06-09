@@ -21,6 +21,10 @@ jobs:
       VDIFFR_RUN_TESTS: true
       _R_CHECK_LENGTH_1_CONDITION_: TRUE
       _R_CHECK_MATRIX_DATA_: TRUE
+      # Enable binary package installation for faster setup
+      R_COMPILE_AND_INSTALL_PACKAGES: never
+      # Prefer binary packages over source compilation
+      R_REPOS: "https://packagemanager.rstudio.com/all/__linux__/jammy/latest"
 
     steps:
       - name: Checkout code
@@ -48,8 +52,7 @@ jobs:
             libxml2-dev \
             libssl-dev \
             libfontconfig1-dev \
-            libfreetype6-dev \
-            libpng-dev \
+            libfreetype6-dev \            libpng-dev \
             libtiff5-dev \
             libjpeg-dev
         shell: bash
@@ -64,9 +67,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('DESCRIPTION', 'renv.lock') }}
+          key: ${{ runner.os }}-r-release-${{ hashFiles('DESCRIPTION') }}-v2
           restore-keys: |
-            ${{ runner.os }}-r-
+            ${{ runner.os }}-r-release-
 
       - name: Set up R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
@@ -74,16 +77,10 @@ jobs:
           extra-packages: |
             any::rcmdcheck
             github::jasp-stats/jaspTools
-            any::testthat
-            any::devtools
           needs: check
-          cache-version: 3
-
-      - name: Install igraph from source
-        run: |
-          # Install igraph from source to avoid binary compatibility issues
-          install.packages("igraph", type = "source", repos = "https://cloud.r-project.org/")
-        shell: Rscript {0}
+          cache-version: 4
+          # Install from binaries when possible
+          install-quarto: false
 
       - name: Setup jaspTools
         run: |
