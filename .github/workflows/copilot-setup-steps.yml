@@ -8,110 +8,48 @@ jobs:
   copilot-setup-steps:
     runs-on: ubuntu-latest
 
-    # Set the permissions to the lowest permissions possible needed for your steps.
-    # Copilot will be given its own token for its operations.
-    permissions:
-      # Clone the repository to install R dependencies
-      contents: read
-
-    # Environment variables for R package installation
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
       R_REMOTES_UPGRADE: never
       VDIFFR_RUN_TESTS: true
-      _R_CHECK_LENGTH_1_CONDITION_: TRUE
-      _R_CHECK_MATRIX_DATA_: TRUE
-      # Enable binary package installation for faster setup
-      R_COMPILE_AND_INSTALL_PACKAGES: never
-      # Use Posit Package Manager for faster binary installs on Ubuntu
-      RSPM: "https://packagemanager.posit.co/cran/__linux__/noble/latest"
-      # Prefer binary packages over source compilation
-      PKG_SYSREQS: false
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      _R_CHECK_LENGTH_1_CONDITION_: TRUE #deprecated from R 4.2.0
+      _R_CHECK_MATRIX_DATA_: TRUE # only works from R 4.2.0 onwards
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r@v2
         with:
-          r-version: release
-          use-public-rspm: true
+          r-version: ${{ matrix.r }}
 
-      - name: Install system dependencies for R packages
+      - name: Install system dependencies on linux
         run: |
-          # System dependencies required for various R packages used in JASP
-          # ragg requires libharfbuzz-dev libfribidi-dev 
-          # credentials (dependency of usethis) requires libgit2-dev
-          # curl (dependency of usethis) requires libcurl4-openssl-dev
-          # libicu (dependency of igraph or stringi) requires libicu libicu-dev
-          sudo apt update
-          sudo apt install -y \
-            libharfbuzz-dev \
-            libfribidi-dev \
-            libgit2-dev \
-            libcurl4-openssl-dev \
-            libicu-dev \
-            libxml2-dev \
-            libssl-dev \
-            libfontconfig1-dev \
-            libfreetype6-dev \
-            libpng-dev \
-            libtiff5-dev \
-            libjpeg-dev
+          # ragg                                          requires libharfbuzz-dev libfribidi-dev 
+          # credentials   (dependency of usethis)         requires libgit2-dev
+          # curl          (dependency of usethis)         requires libcurl4-openssl-dev
+          # libicu   (dependency of igraph or stringi...) requires libicu libicu-dev
+
+          sudo apt install libharfbuzz-dev libfribidi-dev libgit2-dev libcurl4-openssl-dev libicu*
         shell: bash
-
-      - name: Install JAGS
-        run: |
-          # JAGS is needed for Bayesian meta-analysis functionality
-          sudo apt install -y jags
-        shell: bash
-
-      - name: Cache R packages
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-release-${{ hashFiles('DESCRIPTION') }}-v3
-          restore-keys: |
-            ${{ runner.os }}-r-release-
-
-      - name: Set up R dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2
+        
+      - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: |
             any::rcmdcheck
             github::jasp-stats/jaspTools
           needs: check
-          cache-version: 5
-          # Install from binaries when possible
-          install-quarto: false
+          cache-version: 3
+
+      - name: Install JAGS on Linux
+        run: sudo apt install jags
+        shell: bash
 
       - name: Setup jaspTools
         run: |
-          # Initialize jaspTools for JASP module development
           jaspTools::setupJaspTools()
         shell: Rscript {0}
 
-      - name: Verify setup
-        run: |
-          # Verify that key packages are available
-          cat("R version:", R.version.string, "\n")
-          cat("Repository:", getOption("repos")[1], "\n")
-          cat("Available packages:\n")
-          installed <- installed.packages()[, "Package"]
-          key_packages <- c("jaspTools", "metafor", "RoBMA", "testthat")
-          for (pkg in key_packages) {
-            if (pkg %in% installed) {
-              cat("✓", pkg, "\n")
-            } else {
-              cat("✗", pkg, "(missing)\n")
-            }
-          }
-          
-          # Test JAGS availability
-          if (system("jags -help", ignore.stdout = TRUE, ignore.stderr = TRUE) == 0) {
-            cat("✓ JAGS available\n")
-          } else {
-            cat("✗ JAGS not available\n")
-          }
+      - name: Run unit tests
+        run: source("tests/testthat.R")
         shell: Rscript {0}
