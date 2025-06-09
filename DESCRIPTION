@@ -25,7 +25,7 @@ Imports:
   tibble,
   tidyr,
   weightr,
-  BayesTools,
+  BayesTools (>= 0.2.19),
   RoBMA,
   metamisc (>= 0.2.5),
   ggmcmc,
@@ -39,9 +39,8 @@ Imports:
 Remotes:
   jasp-stats/jaspBase,
   jasp-stats/jaspGraphs,
-  FBartos/RoBMA@3lvl,
-  FBartos/BayesTools@diagnostics-fix,
   jasp-stats/jaspSem,
+  FBartos/RoBMA@3lvl,
   mikewlcheung/metasem
 Depends: 
     R (>= 2.10)
