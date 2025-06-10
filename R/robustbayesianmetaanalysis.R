@@ -18,6 +18,7 @@
 # TODO
 # - custom prior for factor moderators does not work
 
+#' @export
 RobustBayesianMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
 
   options[["analysis"]] <- "RoBMA"

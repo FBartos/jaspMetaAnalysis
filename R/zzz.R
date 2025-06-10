@@ -1,3 +1,7 @@
+# import jaspBase
+#' @import jaspBase
+NULL
+
 .onLoad <- function(libname, pkgname) {
 
   if (jaspBase:::getOS() == "osx" &&

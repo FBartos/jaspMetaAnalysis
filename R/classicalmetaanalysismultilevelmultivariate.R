@@ -16,6 +16,7 @@
 #
 
 
+#' @export
 ClassicalMetaAnalysisMultilevelMultivariate <- function(jaspResults, dataset = NULL, options, ...) {
 
   options[["analysis"]] <- "metaAnalysisMultilevelMultivariate"

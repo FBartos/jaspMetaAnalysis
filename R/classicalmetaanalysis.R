@@ -16,6 +16,7 @@
 #
 
 
+#' @export
 ClassicalMetaAnalysis <- function(jaspResults, dataset = NULL, options, ...) {
 
   options[["analysis"]] <- "metaAnalysis"

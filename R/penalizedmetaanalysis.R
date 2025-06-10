@@ -19,6 +19,7 @@
 # - centering
 # - different CI widths
 
+#' @export
 PenalizedMetaAnalysis <- function(jaspResults, dataset = NULL, options, ...) {
 
   if (.pemaCheckReady(options)) {

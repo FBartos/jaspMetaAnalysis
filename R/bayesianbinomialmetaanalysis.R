@@ -17,6 +17,7 @@
 
 #"successesGroup1", "successesGroup2", "sampleSizeGroup1", "sampleSizeGroup2"
 
+#' @export
 BayesianBinomialMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
 
   options[["analysis"]] <- "BiBMA"

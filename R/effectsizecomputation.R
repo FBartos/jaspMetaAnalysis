@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+#' @export
 EffectSizeComputation <- function(jaspResults, dataset, options, state = NULL) {
 
   # all input checking is done within the escalc function
