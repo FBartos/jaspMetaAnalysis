@@ -18,9 +18,9 @@ jobs:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
       R_REMOTES_UPGRADE: never
       VDIFFR_RUN_TESTS: true
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.PCKG_ACT }}
       _R_CHECK_LENGTH_1_CONDITION_: TRUE #deprecated from R 4.2.0
-      _R_CHECK_MATRIX_DATA_: TRUE # only works from R 4.2.0 onwards
+      _R_CHECK_MATRIX_DATA_: TRUE       # only works from R 4.2.0 onwards
 
     steps:
       - uses: actions/checkout@v4
