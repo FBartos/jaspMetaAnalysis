@@ -55,7 +55,7 @@ jobs:
 
       - name: Setup jaspTools
         run: |
-          setupJaspTools(pathJaspDesktop = NULL, installJaspModules = FALSE, installJaspCorePkgs = FALSE, quiet = TRUE, force = TRUE)
+          jaspTools::setupJaspTools(pathJaspDesktop = NULL, installJaspModules = FALSE, installJaspCorePkgs = FALSE, quiet = TRUE, force = TRUE)
         shell: Rscript {0}
 
       - name: Run unit tests
