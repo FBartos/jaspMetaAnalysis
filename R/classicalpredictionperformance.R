@@ -16,6 +16,7 @@
 #
 
 
+#' @export
 ClassicalPredictionPerformance   <- function(jaspResults, dataset, options, state = NULL) {
 
   # required for dispatching
