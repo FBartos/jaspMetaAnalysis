@@ -46,7 +46,6 @@ jobs:
             github::jasp-stats/jaspTools
             github::jasp-stats/jaspBase
             github::jasp-stats/jaspGraphs
-            github::jasp-stats/jaspResults
           needs: check
           cache-version: 3
 
