@@ -17,6 +17,7 @@
 
 # Main function ----
 
+#' @export
 BayesianMetaAnalysisDeprecated <- function(jaspResults, dataset, ready, options) {
 
   # the module here is remnant of the analysis being imported into Cochrane

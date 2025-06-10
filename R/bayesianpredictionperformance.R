@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+#' @export
 BayesianPredictionPerformance  <- function(jaspResults, dataset, options, state = NULL) {
 
   options[["method"]] <- "BAYES"
