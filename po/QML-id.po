@@ -21,7 +21,7 @@ msgstr "Klasik"
 
 msgctxt "Description|"
 msgid "Classical Meta-Analysis"
-msgstr ""
+msgstr "Meta-Analisis Klasik"
 
 msgctxt "Description|"
 msgid "Prediction Model Performance"
@@ -33,11 +33,11 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "WAAP-WLS"
-msgstr ""
+msgstr "WAAP-WLS"
 
 msgctxt "Description|"
 msgid "PET-PEESE"
-msgstr ""
+msgstr "PET-PEESE"
 
 msgctxt "Description|"
 msgid "Selection Models"
@@ -49,7 +49,7 @@ msgstr "Bayesian"
 
 msgctxt "Description|"
 msgid "Bayesian Meta-Analysis"
-msgstr ""
+msgstr "Meta-Analisis Bayesian"
 
 msgctxt "Description|"
 msgid "Bayesian Prediction Model Performance"
@@ -65,11 +65,11 @@ msgstr "Ukuran Efek"
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Effect Size Standard Error"
-msgstr ""
+msgstr "Kesalahan Baku Ukuran Efek"
 
 msgctxt "BayesianPredictionPerformance|"
 msgid "MCMC Diagnostics"
-msgstr ""
+msgstr "Diagnostik MCMC"
 
 #, fuzzy
 msgctxt "BayesianPredictionPerformance|"
@@ -86,7 +86,7 @@ msgstr "Autokorelasi"
 
 msgctxt "BayesianPredictionPerformance|"
 msgid "Gelman Rubin"
-msgstr ""
+msgstr "Gelman Rubin"
 
 #, fuzzy
 msgctxt "BayesianPredictionPerformance|"
@@ -115,11 +115,11 @@ msgstr "Ukuran Efek"
 
 msgctxt "ClassicalMetaAnalysis|"
 msgid "Effect Size Standard Error"
-msgstr ""
+msgstr "Kesalahan Baku Ukuran Efek"
 
 msgctxt "ClassicalMetaAnalysis|"
 msgid "Study Labels"
-msgstr ""
+msgstr "Label Studi"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Effect Size"
@@ -127,7 +127,7 @@ msgstr "Ukuran Efek"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Effect Size Variance"
-msgstr ""
+msgstr "Varians Ukuran Efek"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Fixed Effects"
@@ -147,7 +147,7 @@ msgstr ""
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Fixed Effects Model"
-msgstr ""
+msgstr "Model Efek Tetap"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Predictors"
@@ -163,7 +163,7 @@ msgstr ""
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Random Effects Model"
-msgstr ""
+msgstr "Model Efek Acak"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Multivariate Covariance Model"
@@ -175,7 +175,7 @@ msgstr "Statistik"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Omnibus Statistics"
-msgstr ""
+msgstr "Statistik Omnibus"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Anova Table"
@@ -191,11 +191,11 @@ msgstr "Koefisien"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Fixed Effects Coefficients Table"
-msgstr ""
+msgstr "Tabel Koefisien Efek Tetap"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Random Effects Coefficients Table"
-msgstr ""
+msgstr "Tabel Koefisien Efek Acak"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Model Derived Statistics"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "PetPeese|"
 msgid "Effect sizes & SE"
-msgstr ""
+msgstr "Ukuran Efek & Kesalahan Baku"
 
 msgctxt "PetPeese|"
 msgid "Correlations & N"
-msgstr ""
+msgstr "Korelasi & N"
 
 msgctxt "PetPeese|"
 msgid "Correlation"
@@ -285,11 +285,11 @@ msgstr "Ukuran Efek"
 
 msgctxt "PetPeese|"
 msgid "Effect Size Standard Error"
-msgstr ""
+msgstr "Kesalah Baku Ukuran Efek"
 
 msgctxt "PetPeese|"
 msgid "Transform correlations to"
-msgstr ""
+msgstr "Mengubah korelasi ke"
 
 msgctxt "PetPeese|"
 msgid "Fisher's z"
@@ -314,11 +314,11 @@ msgstr "Plot"
 
 msgctxt "PetPeese|"
 msgid "PET"
-msgstr ""
+msgstr "PET"
 
 msgctxt "PetPeese|"
 msgid "PEESE"
-msgstr ""
+msgstr "PEESE"
 
 msgctxt "PetPeese|"
 msgid "Mean model estimates"
@@ -354,7 +354,7 @@ msgstr ""
 
 msgctxt "BayesianMetaAnalysisAdvanced|"
 msgid "Bayes factor computation"
-msgstr ""
+msgstr "Komputasi faktor Bayes"
 
 msgctxt "BayesianMetaAnalysisAdvanced|"
 msgid "Integration"
@@ -408,7 +408,7 @@ msgstr ""
 
 msgctxt "BayesianMetaAnalysisInference|"
 msgid "Effect sizes per study"
-msgstr ""
+msgstr "Ukuran efek tiap studi"
 
 msgctxt "BayesianMetaAnalysisPlots|"
 msgid "Plots"
@@ -635,9 +635,10 @@ msgctxt "PredictionPerformanceData|"
 msgid "Number of Expected Events"
 msgstr ""
 
+#, fuzzy
 msgctxt "PredictionPerformanceData|"
 msgid "Study Labels"
-msgstr ""
+msgstr "Label Studi"
 
 #, fuzzy
 msgctxt "PredictionPerformanceInference|"
@@ -955,13 +956,15 @@ msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Fisher's z"
 msgstr ""
 
+#, fuzzy
 msgctxt "SelectionModels|"
 msgid "Effect sizes & SE"
-msgstr ""
+msgstr "Ukuran Efek & Kesalahan Baku"
 
+#, fuzzy
 msgctxt "SelectionModels|"
 msgid "Correlations & N"
-msgstr ""
+msgstr "Korelasi & N"
 
 msgctxt "SelectionModels|"
 msgid "Correlation"
@@ -1008,9 +1011,10 @@ msgctxt "SelectionModels|"
 msgid "Negative"
 msgstr "Negatif"
 
+#, fuzzy
 msgctxt "SelectionModels|"
 msgid "Transform correlations to"
-msgstr ""
+msgstr "Mengubah korelasi ke"
 
 msgctxt "SelectionModels|"
 msgid "Cohen's d"
@@ -1060,13 +1064,15 @@ msgctxt "SelectionModels|"
 msgid "Mean model estimates"
 msgstr ""
 
+#, fuzzy
 msgctxt "WaapWls|"
 msgid "Effect sizes & SE"
-msgstr ""
+msgstr "Ukuran Efek & Kesalahan Baku"
 
+#, fuzzy
 msgctxt "WaapWls|"
 msgid "Correlations & N"
-msgstr ""
+msgstr "Korelasi & N"
 
 msgctxt "WaapWls|"
 msgid "Correlation"
@@ -1080,9 +1086,10 @@ msgctxt "WaapWls|"
 msgid "Effect Size Standard Error"
 msgstr ""
 
+#, fuzzy
 msgctxt "WaapWls|"
 msgid "Transform correlations to"
-msgstr ""
+msgstr "Mengubah korelasi ke"
 
 msgctxt "WaapWls|"
 msgid "Fisher's z"
@@ -1538,9 +1545,10 @@ msgctxt "RobustBayesianMetaAnalysisBaseline|"
 msgid "Weight"
 msgstr "Berat"
 
+#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisDiagnostics|"
 msgid "MCMC Diagnostics"
-msgstr ""
+msgstr "Diagnostik MCMC"
 
 msgctxt "RobustBayesianMetaAnalysisDiagnostics|"
 msgid "Overview table"
@@ -1560,13 +1568,15 @@ msgctxt "RobustBayesianMetaAnalysisDiagnostics|"
 msgid "Weights"
 msgstr "Bobot"
 
+#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisDiagnostics|"
 msgid "PET"
-msgstr ""
+msgstr "PET"
 
+#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisDiagnostics|"
 msgid "PEESE"
-msgstr ""
+msgstr "PEESE"
 
 msgctxt "RobustBayesianMetaAnalysisDiagnostics|"
 msgid "Type"
@@ -1610,9 +1620,10 @@ msgctxt "RobustBayesianMetaAnalysisPlots|"
 msgid "Rescale x-axis"
 msgstr ""
 
+#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisPlots|"
 msgid "PET-PEESE"
-msgstr ""
+msgstr "PET-PEESE"
 
 msgctxt "Description|"
 msgid "Miscellaneous"
@@ -1802,9 +1813,10 @@ msgid ""
 "permutation tests are selected."
 msgstr ""
 
+#, fuzzy
 msgctxt "ClassicalMetaAnalysisMultilevelMultivariate|"
 msgid "Study Labels"
-msgstr ""
+msgstr "Label Studi"
 
 msgctxt "ClassicalMetaAnalysisMultilevelMultivariate|"
 msgid ""
@@ -2481,10 +2493,6 @@ msgstr ""
 
 msgctxt "EffectSizeComputation|"
 msgid "Homozygous Recessive Alleles"
-msgstr ""
-
-msgctxt "EffectSizeComputation|"
-msgid "Group 2/Outcome Minus"
 msgstr ""
 
 msgctxt "EffectSizeComputation|"
@@ -3312,13 +3320,6 @@ msgid "Maximum 𝜏²"
 msgstr ""
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
-msgid ""
-"Specify the maximim allowable value of 𝜏² during optimization. Available "
-"only for specific optimization methods and unavailable in multilevel/"
-"multivariate meta-analysis or when heterogeneity model terms are included."
-msgstr ""
-
-msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Maximum evaluations"
 msgstr ""
 
@@ -3534,14 +3535,6 @@ msgstr ""
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid "Effect size"
 msgstr "Ukuran efek"
-
-msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
-msgid "Model variables"
-msgstr ""
-
-msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
-msgid "Selected variables"
-msgstr ""
 
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid ""
@@ -4536,20 +4529,6 @@ msgid ""
 "independent model is fitted to the corresponding data set subset."
 msgstr ""
 
-msgctxt "BayesianBinomialMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr ""
-
-msgctxt "BayesianBinomialMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
-msgstr ""
-
 #, fuzzy
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Effect size"
@@ -4774,20 +4753,6 @@ msgid ""
 "independent model is fitted to the corresponding data set subset."
 msgstr ""
 
-msgctxt "BayesianMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr ""
-
-msgctxt "BayesianMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
-msgstr ""
-
 #, fuzzy
 msgctxt "BayesianMetaAnalysis|"
 msgid "Effect size"
@@ -4909,9 +4874,10 @@ msgctxt "BayesianMetaAnalysisDeprecated|"
 msgid "95% CI Lower and Upper Bound"
 msgstr ""
 
+#, fuzzy
 msgctxt "BayesianMetaAnalysisDeprecated|"
 msgid "Study Labels"
-msgstr ""
+msgstr "Label Studi"
 
 msgctxt "ClassicalMetaAnalysis|"
 msgid ""
@@ -6107,14 +6073,6 @@ msgid "Effect size"
 msgstr "Ukuran efek"
 
 msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
-msgid "Model variables"
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
-msgid "Selected variables"
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
 msgid ""
 "Variables selected for computing estimated marginal means in the effect size "
 "model."
@@ -6721,20 +6679,6 @@ msgctxt "RobustBayesianMetaAnalysis|"
 msgid ""
 "Variable indicating subgroup stratification. For each subgroup, an "
 "independent model is fitted to the corresponding data set subset."
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
 msgstr ""
 
 #, fuzzy
@@ -7525,9 +7469,10 @@ msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Incidence rate difference"
 msgstr ""
 
+#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Study Labels"
-msgstr ""
+msgstr "Label Studi"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid ""
@@ -7624,4 +7569,73 @@ msgstr ""
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Apply continuity correction to Cochran-Mantel-Haenszel test statistic."
+msgstr ""
+
+msgctxt "ClassicalMetaAnalysisAdvanced|"
+msgid ""
+"Specify the maximum allowable value of 𝜏² during optimization. Available "
+"only for specific optimization methods and unavailable in multilevel/"
+"multivariate meta-analysis or when heterogeneity model terms are included."
+msgstr ""
+
+msgctxt "BayesianBinomialMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr ""
+
+msgctxt "BayesianBinomialMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
+msgstr ""
+
+msgctxt "BayesianMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr ""
+
+msgctxt "BayesianMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
+msgstr ""
+
+msgctxt "EffectSizeComputation|"
+msgid "Group 2/Outcome -"
+msgstr ""
+
+msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
+msgid "Model Variables"
+msgstr ""
+
+msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
+msgid "Selected Variables"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
+msgid "Model Variables"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
+msgid "Selected Variables"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
 msgstr ""

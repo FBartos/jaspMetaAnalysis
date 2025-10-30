@@ -1,49 +1,128 @@
-This is a JASP module that contains a QML user-facing interface and R files responsible for the back-end computations.
+# JASP Module
 
-The QML interface contains `Analyses` defined in the `inst/Descriptions/` directory. Each analysis links to the GUI defined in the `inst/qml/` directory and the R functions defined in the `R/` directory.
+ALWAYS follow these instructions first and fallback to additional search and context gathering ONLY if the information in these instructions is incomplete or found to be in error.
 
-The QML interface defines a list of options that are passed to the R functions via the `options` argument.
+This is a JASP module. It contains QML user-facing interfaces and R backend computations.
 
-The QML interface type-checks the `options` argument to ensure that the required options are present and have valid values. If any required option is missing or has an invalid value, the analysis will not run, and an error message will be displayed to the user.
+## Working Effectively
 
-Since the `options` argument is checked in the GUI, the R functions should not need to check the validity of the user input (the main exceptions are `TextField` and `FormulaField`, which can contain arbitrary text input).
+### Initial Setup and Build
+- R is and the JASP R packages are pre-installed in GitHub Actions runners
+- All tests should pass. Note that there might be many tests and the runtime might be ~ 5 minutes.
 
-The QML interface uses custom QML elements implemented in jasp-desktop (https://github.com/jasp-stats/jasp-desktop/).
+### Running Tests
+- `Rscript -e "library(jaspTools); testAll()"` -- runs full test suite, takes 70+ seconds. NEVER CANCEL.
+- Tests are located in `tests/testthat/test-*.R` files
+- Each test file corresponds to an R analysis file in the `R/` directory
+- Test snapshots are stored in `tests/testthat/_snaps/`
 
-Use the custom JASP QML elements wherever possible. See https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/r-analyses-guide.md for more information on how to use the custom QML elements.
+### Repository Structure
+```
+/
+├── R/                          # Backend R analysis functions
+├── inst/
+│   ├── qml/                   # QML interface definitions
+│   ├── Descriptions/          # Analysis descriptions (Description.qml)
+│   ├── help/                  # Markdown help files
+│   └── Upgrades.qml          # Version upgrade mappings
+├── tests/testthat/           # Unit tests using jaspTools
+├── .github/workflows/        # CI/CD automation
+├── DESCRIPTION               # R package metadata
+├── renv.lock                # R dependency lockfile
+└── jaspSummaryStatistics.Rproj  # RStudio project
+```
 
-Use the existing QML files as examples for QML structure and style.
+### Key Files to Check After Changes
+- Always check corresponding test file in `tests/testthat/` when modifying R functions
+- Check `inst/Upgrades.qml` when renaming QML options to maintain backward compatibility
 
-A QML element's `title`/`label` property is user-facing and should be concise and descriptive.
+## Building and Testing Code Changes
 
-A QML element's `name` property is internal and should correspond to the `title`/`label` property translated into camelCase, inheriting prefixes from the hierarchy of the QML elements.
+### Before Making Changes
+- Run full test suite to establish baseline: `Rscript -e "library(jaspTools); testAll()"`
+- NEVER CANCEL: Tests can take 300+ seconds, set timeout to 300 seconds
 
-QML elements should be organized in a way that reflects the logical structure of the user interface, grouping related elements together.
+### After Making Changes
+- Run tests again to verify your changes: `Rscript -e "library(jaspTools); testAll()"`
+- NEVER CANCEL: Build and test can take up to 5 minutes total
+- All tests must pass - do not proceed if tests fail
+- Some deprecation warnings are expected and can be ignored
 
-QML elements should be documented using the `info` property. Document the elements in simple, non-technical, and accessible language.
+### Manual Validation Scenarios
+Since this module runs within JASP desktop application, manual testing requires:
+- Testing via jaspTools test framework (covered above)
+- Individual analysis validation can be done through R console using jaspTools::runAnalysis()
+- CANNOT run standalone - module only functions within JASP ecosystem
 
-Follow the JASP style guide for naming conventions summarized at https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/guide-option-names.md#use-camelcase.
+## Development Rules
 
-The R files should follow CRAN guidelines for code, documentation, and package structure.
+### QML Interface Rules
+- QML interfaces in `inst/qml/` define user-facing options passed to R functions
+- Each analysis links: `inst/Description.qml/` → `inst/qml/` → `R/` functions
+- QML elements use `name` (camelCase internal) and `title`/`label` (user-facing)
+- Document QML elements using `info` property for help generation
+- Use existing QML files as examples for structure and style
+- Add default values to unit tests when adding new QML options
 
-R scripts should be organized in a way that reflects the logical structure of the analyses, grouping related functions together.
+### R Backend Rules  
+- R functions in `R/` directory called by analyses in `inst/Descriptions/`
+- Use camelCase for all function and variable names
+- NEVER use `library()` or `require()` - use `package::function()` syntax
+- Avoid new dependencies - re-implement simple functions instead
+- Access `options` list via `options[["name"]]` notation to avoid partial matching
+- Follow CRAN guidelines for code structure and documentation
 
-R functions common to multiple analyses should be placed in a common R file (there are multiple common files depending on whether the functions are common to all analyses or only a subset of analyses).
+### Input Validation and Error Handling
+- **TARGETED VALIDATION ONLY**: Since `options` are validated in the GUI, R functions should NOT check user input validity except for specific cases
+- **VALIDATE ONLY**: `dataset` object (data.frame from GUI), `TextField` options, and `FormulaField` options (arbitrary text input)
+- Use `gettext()` and `gettextf()` for all user-visible messages (internationalization)
+- For `dataset` validation, check: missing values, infinity, negative values, insufficient observations, factor levels, variance
+- Example: `.hasErrors(dataset, type = c('observations', 'variance', 'infinity'), all.target = options$variables, observations.amount = '< 3', exitAnalysisIfErrors = TRUE)`
+- Validate dataset assumptions automatically when required for analysis validity
+- Use footnotes for assumption violations that affect specific cells/values
+- Place critical errors that invalidate entire analysis over the results table
 
-R files should always use camelCase for function and variable names throughout the codebase.
+### Error Message Guidelines (from jasp-human-guide.md)
+- Write clear, actionable error messages that prevent user confusion
+- Use `gettextf()` with placeholders for dynamic content: `gettextf("Number of factor levels is %1$s in %2$s", levels, variable)`
+- For multiple arguments, use `%1$s`, `%2$s` format for translator clarity
+- Use `ngettext()` for singular/plural forms
+- Never mark empty strings for translation
+- Use UTF-8 encoding for non-ASCII characters: `\u03B2` for β
+- Double `%` characters in format strings: `gettextf("%s%% CI for Mean")`
 
-R files should follow the R-guidelines summarized at https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/r-style-guide.md.
+### Testing Requirements
+- Unit tests in `tests/testthat/` use jaspTools framework
+- Tests run via `jaspTools::testAll()` - takes 300+ seconds, NEVER CANCEL
+- Test files correspond to R analysis files (test-*.R matches *.R)
+- Update test expected values when changing analysis outputs
 
-Never use `library()` or `require()` in the R files. Use the `package::function()` syntax to avoid conflicts.
+## CI/CD Pipeline
+- GitHub Actions in `.github/workflows/unittests.yml` runs on every push
+- Triggers on changes to R, test, or package files
+- Uses jasp-stats/jasp-actions reusable workflow
+- No external dependencies (JAGS, igraph) required for this module
 
-Avoid adding dependencies unless absolutely necessary. If a simple R function would require a new dependency, re-implement the function without the dependency and acknowledge the source of the original function in a comment.
+## Common Tasks
 
-The `tests` directory contains unit tests for the R functions. The unit tests are run via the `jaspTools::testAll()` function.
+### Adding New Analysis
+1. Create R function in `R/` directory following camelCase naming
+2. Add QML interface in `inst/qml/`
+3. Define analysis in `inst/Description.qml`
+4. Add unit tests in `tests/testthat/`
+5. Run `jaspTools::testAll()` to validate (300+ seconds, NEVER CANCEL)
 
-Never add or delete unit tests.
+### Modifying Existing Analysis
+1. Update R function maintaining existing interface
+2. Update QML if adding/changing options
+3. Update unit tests and expected results
+4. Add upgrade mapping to `inst/Upgrades.qml` if renaming options
+5. Run tests: `jaspTools::testAll()` (NEVER CANCEL, 300+ seconds)
 
-Make sure that existing unit tests always pass before submitting a pull request.
-
-If you add a new QML option, you might need to add the default value to the `options` list in the corresponding unit tests.
-
-Avoid using non-CRAN dependencies to maintain CRAN compliance.
+### Detailed Development Process
+- **Step 1**: Create main analysis function with `jaspResults`, `dataset`, `options` arguments
+- **Step 2**: **CRITICAL** - Use `.quitAnalysis()` for `dataset`, `TextField`, `FormulaField` validation only
+- **Step 3**: Create output tables/plots with proper dependencies, citations, column specs
+- Use `createJaspTable()`, `createJaspPlot()`, `createJaspHtml()` for output elements
+- Always set `$dependOn()` for proper caching and state management
+- Use containers for grouping related elements, state objects for reusing computed results

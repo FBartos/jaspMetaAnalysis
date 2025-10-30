@@ -1,13 +1,21 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2025-08-25 12:03+0000\n"
+"Last-Translator: Marko Bojović <bojovicmarko@outlook.com>\n"
+"Language-Team: Serbian <https://hosted.weblate.org/projects/jasp/"
+"jaspmetaanalysis-qml/sr/>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.13\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
 msgid "Meta-Analysis"
-msgstr ""
+msgstr "Мета-анализе"
 
 msgctxt "Description|"
 msgid "Synthesize evidence across multiple studies"
@@ -27,7 +35,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Classical"
-msgstr ""
+msgstr "Класичан"
 
 msgctxt "Description|"
 msgid "Classical Meta-Analysis"
@@ -2097,7 +2105,7 @@ msgstr ""
 
 msgctxt "PenalizedMetaAnalysis|"
 msgid "Scatterplot"
-msgstr ""
+msgstr "Дијаграм расипања"
 
 msgctxt "PenalizedMetaAnalysis|"
 msgid "Histogram"
@@ -2373,7 +2381,7 @@ msgstr ""
 
 msgctxt "BayesianMetaAnalysisPlots|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Претходна и задња"
 
 msgctxt "BayesianMetaAnalysisPlots|"
 msgid "Additional info"
@@ -2429,27 +2437,27 @@ msgstr ""
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "std:"
-msgstr ""
+msgstr "std:"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "df:"
-msgstr ""
+msgstr "df:"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "Truncation"
-msgstr ""
+msgstr "Скраћивање"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "Lower bound:"
-msgstr ""
+msgstr "Доња граница:"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "Upper bound:"
-msgstr ""
+msgstr "Горња граница:"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "Heterogeneity (between-study SD)"
@@ -2661,13 +2669,6 @@ msgstr ""
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Maximum 𝜏²"
-msgstr ""
-
-msgctxt "ClassicalMetaAnalysisAdvanced|"
-msgid ""
-"Specify the maximim allowable value of 𝜏² during optimization. Available "
-"only for specific optimization methods and unavailable in multilevel/"
-"multivariate meta-analysis or when heterogeneity model terms are included."
 msgstr ""
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
@@ -6926,7 +6927,7 @@ msgstr ""
 
 msgctxt "MetaAnalyticSem|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Дескриптивна"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Number of estimates"
@@ -7519,4 +7520,11 @@ msgstr ""
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Apply continuity correction to Cochran-Mantel-Haenszel test statistic."
+msgstr ""
+
+msgctxt "ClassicalMetaAnalysisAdvanced|"
+msgid ""
+"Specify the maximum allowable value of 𝜏² during optimization. Available "
+"only for specific optimization methods and unavailable in multilevel/"
+"multivariate meta-analysis or when heterogeneity model terms are included."
 msgstr ""

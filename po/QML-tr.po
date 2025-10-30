@@ -761,7 +761,7 @@ msgstr "Klasik"
 
 msgctxt "Description|"
 msgid "Bayesian"
-msgstr "Bayes"
+msgstr "Bayesçi"
 
 msgctxt "Description|"
 msgid "Prediction Model Performance"
@@ -2460,10 +2460,6 @@ msgid "Homozygous Recessive Alleles"
 msgstr ""
 
 msgctxt "EffectSizeComputation|"
-msgid "Group 2/Outcome Minus"
-msgstr ""
-
-msgctxt "EffectSizeComputation|"
 msgid "Time 2/Outcome -"
 msgstr ""
 
@@ -3309,13 +3305,6 @@ msgid "Maximum 𝜏²"
 msgstr ""
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
-msgid ""
-"Specify the maximim allowable value of 𝜏² during optimization. Available "
-"only for specific optimization methods and unavailable in multilevel/"
-"multivariate meta-analysis or when heterogeneity model terms are included."
-msgstr ""
-
-msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Maximum evaluations"
 msgstr ""
 
@@ -3532,14 +3521,6 @@ msgstr "Kestirilen Aykırı Ortalamalar"
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid "Effect size"
 msgstr "Etki Boyutu"
-
-msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
-msgid "Model variables"
-msgstr ""
-
-msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
-msgid "Selected variables"
-msgstr ""
 
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid ""
@@ -4548,20 +4529,6 @@ msgid ""
 "independent model is fitted to the corresponding data set subset."
 msgstr ""
 
-msgctxt "BayesianBinomialMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr ""
-
-msgctxt "BayesianBinomialMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
-msgstr ""
-
 #, fuzzy
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Effect size"
@@ -4790,20 +4757,6 @@ msgid ""
 "independent model is fitted to the corresponding data set subset."
 msgstr ""
 
-msgctxt "BayesianMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr ""
-
-msgctxt "BayesianMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
-msgstr ""
-
 #, fuzzy
 msgctxt "BayesianMetaAnalysis|"
 msgid "Effect size"
@@ -4923,10 +4876,9 @@ msgctxt "BayesianMetaAnalysisDeprecated|"
 msgid "Effect Size Standard Error"
 msgstr "Etki Boyutu Standart Hatası"
 
-#, fuzzy
 msgctxt "BayesianMetaAnalysisDeprecated|"
 msgid "95% CI Lower and Upper Bound"
-msgstr "%95 CI Alt ve Üst Sınır"
+msgstr "%95 GA Alt ve Üst Sınır"
 
 #, fuzzy
 msgctxt "BayesianMetaAnalysisDeprecated|"
@@ -6137,14 +6089,6 @@ msgid "Effect size"
 msgstr "Etki Boyutu"
 
 msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
-msgid "Model variables"
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
-msgid "Selected variables"
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
 msgid ""
 "Variables selected for computing estimated marginal means in the effect size "
 "model."
@@ -6783,20 +6727,6 @@ msgctxt "RobustBayesianMetaAnalysis|"
 msgid ""
 "Variable indicating subgroup stratification. For each subgroup, an "
 "independent model is fitted to the corresponding data set subset."
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr ""
-
-msgctxt "RobustBayesianMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
 msgstr ""
 
 #, fuzzy
@@ -7691,4 +7621,73 @@ msgstr ""
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Apply continuity correction to Cochran-Mantel-Haenszel test statistic."
+msgstr ""
+
+msgctxt "ClassicalMetaAnalysisAdvanced|"
+msgid ""
+"Specify the maximum allowable value of 𝜏² during optimization. Available "
+"only for specific optimization methods and unavailable in multilevel/"
+"multivariate meta-analysis or when heterogeneity model terms are included."
+msgstr ""
+
+msgctxt "BayesianBinomialMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr ""
+
+msgctxt "BayesianBinomialMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
+msgstr ""
+
+msgctxt "BayesianMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr ""
+
+msgctxt "BayesianMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
+msgstr ""
+
+msgctxt "EffectSizeComputation|"
+msgid "Group 2/Outcome -"
+msgstr ""
+
+msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
+msgid "Model Variables"
+msgstr ""
+
+msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
+msgid "Selected Variables"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
+msgid "Model Variables"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
+msgid "Selected Variables"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr ""
+
+msgctxt "RobustBayesianMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
 msgstr ""

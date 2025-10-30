@@ -238,7 +238,7 @@ msgstr "N"
 
 msgctxt "SelectionModels|"
 msgid "P-value (one-sided)"
-msgstr "Valor p (unilateral)"
+msgstr "Valor P (unilateral)"
 
 msgctxt "SelectionModels|"
 msgid "Model"
@@ -246,7 +246,7 @@ msgstr "Modelo"
 
 msgctxt "SelectionModels|"
 msgid "P-value cutoffs"
-msgstr "Puntos de corte del valor p"
+msgstr "Puntos de corte del valor P"
 
 msgctxt "SelectionModels|"
 msgid "Two-sided selection"
@@ -254,7 +254,7 @@ msgstr "Selección bilateral"
 
 msgctxt "SelectionModels|"
 msgid "Automatically join p-value intervals"
-msgstr "Unir intervalos de valor p automáticamente"
+msgstr "Unir automáticamente intervalos de valor P"
 
 msgctxt "SelectionModels|"
 msgid "Positive"
@@ -738,7 +738,7 @@ msgstr "Ninguna"
 
 msgctxt "RobustBayesianMetaAnalysisWeightfunctions|"
 msgid "p-values"
-msgstr "valores p"
+msgstr "Valores P"
 
 msgctxt "RobustBayesianMetaAnalysisWeightfunctions|"
 msgid "Weight"
@@ -1358,7 +1358,7 @@ msgstr "T"
 
 msgctxt "SelectionModels|"
 msgid "P-value frequency table"
-msgstr "Tabla de frecuencias de valores p"
+msgstr "Tabla de frecuencias de valores P"
 
 msgctxt "SelectionModels|"
 msgid "Mean estimates table"
@@ -2506,10 +2506,6 @@ msgid "Homozygous Recessive Alleles"
 msgstr "Alelos recesivos de homocigoto"
 
 msgctxt "EffectSizeComputation|"
-msgid "Group 2/Outcome Minus"
-msgstr "Grupo 2/Resultado menos"
-
-msgctxt "EffectSizeComputation|"
 msgid "Time 2/Outcome -"
 msgstr "Tiempo 2/Resultado -"
 
@@ -2643,7 +2639,7 @@ msgstr "Correlación (Semi)Parcial"
 
 msgctxt "EffectSizeComputation|"
 msgid "P-Value"
-msgstr "Valor p"
+msgstr "Valor P"
 
 msgctxt "EffectSizeComputation|"
 msgid "Effect Size"
@@ -3044,14 +3040,14 @@ msgstr ""
 
 msgctxt "FunnelPlot|"
 msgid "Breaks"
-msgstr "Rupturas"
+msgstr "Saltos"
 
 msgctxt "FunnelPlot|"
 msgid ""
 "Specify the breakpoints for power enhancement. All levels must be within the "
 "0.05 - 1 range."
 msgstr ""
-"Especificar los puntos de ruptura para la mejora de potencia. Todos los "
+"Especificar los puntos de salto para la mejora de potencia. Todos los "
 "niveles deben estar en el rango 0.05 - 1."
 
 msgctxt "FunnelPlot|"
@@ -3416,17 +3412,6 @@ msgid "Maximum 𝜏²"
 msgstr "Máximo 𝜏²"
 
 msgctxt "ClassicalMetaAnalysisAdvanced|"
-msgid ""
-"Specify the maximim allowable value of 𝜏² during optimization. Available "
-"only for specific optimization methods and unavailable in multilevel/"
-"multivariate meta-analysis or when heterogeneity model terms are included."
-msgstr ""
-"Especificar el valor máximo admisible de 𝜏² durante la optimización. "
-"Disponible solo para métodos específicos de optimización; y no disponible en "
-"Meta-Análisis multinivel/multivariante ni cuando se incluyen términos del "
-"modelo de heterogeneidad."
-
-msgctxt "ClassicalMetaAnalysisAdvanced|"
 msgid "Maximum evaluations"
 msgstr "Máximo de evaluaciones"
 
@@ -3689,14 +3674,6 @@ msgstr "Medias marginales estimadas"
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid "Effect size"
 msgstr "Magnitud del efecto"
-
-msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
-msgid "Model variables"
-msgstr "Variables del modelo"
-
-msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
-msgid "Selected variables"
-msgstr "Variables seleccionadas"
 
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid ""
@@ -4408,7 +4385,7 @@ msgstr "Contrastes"
 
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid "P-value adjustment"
-msgstr "Ajuste del valor p"
+msgstr "Ajuste del valor P"
 
 msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
 msgid "None"
@@ -4921,27 +4898,6 @@ msgstr ""
 "de datos."
 
 msgctxt "BayesianBinomialMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr "Promediar modelos bayesiano"
-
-msgctxt "BayesianBinomialMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
-msgstr ""
-"Especificar las componentes que deben incluirse en el promedio de modelos "
-"bayesiano. Cando se elige, se especifica la distribución previa bajo tanto "
-"la presencia como la ausencia de la componente. Esto permite contrastar "
-"presencia vs. ausencia de la componente (si no se selecciona la componente, "
-"no se realiza el contraste de factor de Bayes ). Las estimaciones "
-"presentadas se promedian entre distribuciones previas nulas y alternativas "
-"de todas las componentes especificadas."
-
-msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Effect size"
 msgstr "Magnitud del efecto"
 
@@ -5211,27 +5167,6 @@ msgstr ""
 "Variable que indica la estratificación de subgrupos. Para cada subgrupo, se "
 "ajusta un modelo independiente al correspondiente subconjunto del conjunto "
 "de datos."
-
-msgctxt "BayesianMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr "Promediar modelos bayesiano"
-
-msgctxt "BayesianMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
-msgstr ""
-"Especificar las componentes que deben incluirse en el promedio de modelos "
-"bayesiano. Cando se elige, se especifica la distribución previa bajo tanto "
-"la presencia como la ausencia de la componente. Esto permite contrastar "
-"presencia vs. ausencia de la componente (si no se selecciona la componente, "
-"no se realiza el contraste de factor de Bayes ). Las estimaciones "
-"presentadas se promedian entre distribuciones previas nulas y alternativas "
-"de todas las componentes especificadas."
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Effect size"
@@ -5605,11 +5540,11 @@ msgstr ""
 
 msgctxt "BubblePlot|"
 msgid "Theme"
-msgstr "Esquema de colores"
+msgstr "Tema"
 
 msgctxt "BubblePlot|"
 msgid "Set the theme of the bubble plot."
-msgstr "Establecer el esquema de colores del gráfico de burbujas."
+msgstr "Establecer el tema del gráfico de burbujas."
 
 msgctxt "BubblePlot|"
 msgid "White background"
@@ -5668,7 +5603,7 @@ msgid ""
 msgstr ""
 "Realiza una prueba de permutación para los coeficientes del modelo. "
 "Disponible en el Meta-Análisis en el tipo de análisis cuando no se "
-"especifica la conglomeración. Los valores-p resultantes se muestran en la "
+"especifica la conglomeración. Los valores P resultantes se presentan en la "
 "columna 'p (permutación)'. Ten en cuenta que la permutación puede ser "
 "intensiva en cálculos."
 
@@ -6198,7 +6133,7 @@ msgid ""
 "Display the conditional effect, heterogeneity, and estimated marginal means "
 "estimates."
 msgstr ""
-"Mostrar las estimaciones de efecto, heterogeneidad y medias marginales "
+"Presentar las estimaciones de efecto, heterogeneidad y medias marginales "
 "estimadas condicionadas."
 
 msgctxt "ForestPlot|"
@@ -6313,11 +6248,11 @@ msgstr "Información de los contrastes"
 
 msgctxt "ForestPlot|"
 msgid "Statistic and p-value"
-msgstr "Estadístico y valor-p"
+msgstr "Estadístico y valor P"
 
 msgctxt "ForestPlot|"
 msgid "P-value"
-msgstr "Valor-p"
+msgstr "Valor P"
 
 msgctxt "ForestPlot|"
 msgid "Color"
@@ -6458,7 +6393,7 @@ msgctxt "RobustBayesianMetaAnalysisAdvanced|"
 msgid ""
 "Display the underlying R code used by the RoBMA package to fit the model."
 msgstr ""
-"Mostrar el código R subyacente utilizado por el paquete RoBMA para ajustar "
+"Presentar el código R subyacente utilizado por el paquete RoBMA para ajustar "
 "el modelo."
 
 msgctxt "RobustBayesianMetaAnalysisAdvanced|"
@@ -6751,14 +6686,6 @@ msgstr ""
 msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
 msgid "Effect size"
 msgstr "Magnitud del efecto"
-
-msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
-msgid "Model variables"
-msgstr "Variables del modelo"
-
-msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
-msgid "Selected variables"
-msgstr "Variables seleccionadas"
 
 msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
 msgid ""
@@ -7445,27 +7372,6 @@ msgstr ""
 "de datos."
 
 msgctxt "RobustBayesianMetaAnalysis|"
-msgid "Bayesian Model-Averaging"
-msgstr "Promediar modelos bayesiano"
-
-msgctxt "RobustBayesianMetaAnalysis|"
-msgid ""
-"Specify which components should be included Bayesian model-averaging. If "
-"selected, prior distribution under both the presence and absence of the "
-"component are specified. This allows for testing for the presence vs. "
-"absence of the component (if the component is not selected, a Bayes factor "
-"test is not conducted). The displayed estimates are averaged across null and "
-"alternative prior distributions of all specified components."
-msgstr ""
-"Especificar las componentes que deben incluirse en el promedio de modelos "
-"bayesiano. Cando se elige, se especifica la distribución previa bajo tanto "
-"la presencia como la ausencia de la componente. Esto permite contrastar "
-"presencia vs. ausencia de la componente (si no se selecciona la componente, "
-"no se realiza el contraste de factor de Bayes ). Las estimaciones "
-"presentadas se promedian entre distribuciones previas nulas y alternativas "
-"de todas las componentes especificadas."
-
-msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Effect size"
 msgstr "Magnitud del efecto"
 
@@ -7698,7 +7604,7 @@ msgstr "MES Meta-Analítico"
 
 msgctxt "Description|"
 msgid "SEM-Based Meta-Analysis"
-msgstr "MES-Basado Meta-Analítico"
+msgstr "Meta-Análisis basado en MES"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Correlation/Covariance Matrix"
@@ -7741,7 +7647,7 @@ msgstr ""
 "Variables que contienen las medias de las variables. El nombre de las "
 "variables debe ser `x` donde `x` corresponde a los nombres de las variables "
 "en la entrada de la matriz de correlaciones/covarianzas. Esta entrada se "
-"requiere solo cuando se solicita el SEM Meta-Analítico con medias."
+"requiere solo cuando se solicita el MES Meta-Analítico con medias."
 
 msgctxt "MetaAnalyticSem|"
 msgid "Data Input Type"
@@ -7790,10 +7696,6 @@ msgstr "."
 msgctxt "MetaAnalyticSem|"
 msgid "-"
 msgstr "-"
-
-msgctxt "MetaAnalyticSem|"
-msgid " "
-msgstr " "
 
 msgctxt "MetaAnalyticSem|"
 msgid "Available variable names"
@@ -8126,7 +8028,7 @@ msgstr "SMD a CLES, Pr(superioridad)"
 
 msgctxt "MetaAnalyticSem|"
 msgid "SEM fit measures"
-msgstr "Medidas de ajuste de MES (SEM)"
+msgstr "Medidas de ajuste del MES (SEM)"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Show a summary of the SEM goodness-of-fit statistics."
@@ -8254,9 +8156,8 @@ msgstr "Mostrar un resumen de los estadísticos de ajuste del modelo."
 
 msgctxt "Description|"
 msgid "Mantel-Haenszel / Peto (beta)"
-msgstr ""
+msgstr "Mantel-Haenszel/Peto (beta)"
 
-#, fuzzy
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Sample Size Group 2"
 msgstr "Tamaño de muestra Grupo 2"
@@ -8266,79 +8167,69 @@ msgid ""
 "Mantel-Haenszel / Peto meta-analysis allows you to conduct a meta-analysis "
 "of frequencies / time to event outcomes."
 msgstr ""
+"El Meta-Análisis de Mantel-Haenszel/Peto permite realizar un meta-análisis "
+"de frecuencias/tiempo a los resultados de eventos."
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "References"
 msgstr "Referencias"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "R Packages"
 msgstr "Paquetes de R"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Successes Group 1"
 msgstr "Aciertos Grupo 1"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Successes Group 2"
 msgstr "Aciertos Grupo 2"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Sample Size Group 1"
 msgstr "Tamaño de muestra Grupo 1"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Sample Size Group 2"
 msgstr "Tamaño de muestra Grupo 2"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Events Group 1"
 msgstr "Eventos Grupo 1"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Events Group 2"
 msgstr "Eventos Grupo 2"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Person-Time Group 1"
 msgstr "Persona-Tiempo Grupo 1"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Person-Time Group 2"
 msgstr "Persona-Tiempo Grupo 2"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Method"
 msgstr "Método"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Select the method to be used for the meta-analysis."
-msgstr ""
+msgstr "Seleccionar el método a usar para el Meta-Análisis."
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Mantel-Haenszel (Frequencies)"
-msgstr ""
+msgstr "Mantel-Haenszel (Frecuencias)"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Mantel-Haenszel (Events)"
-msgstr ""
+msgstr "Mantel-Haenszel (Eventos)"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Peto"
-msgstr ""
+msgstr "Peto"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Effect size measure"
 msgstr "Medida de la magnitud del efecto"
@@ -8346,36 +8237,32 @@ msgstr "Medida de la magnitud del efecto"
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Select the effect size measure to be used in the meta-analysis."
 msgstr ""
+"Selecciona la medida de la magnitud del efecto a usar en el Meta-Análisis."
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Log odds ratio"
 msgstr "Logaritmo de la Razón de Probabilidades"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Log risk ratio"
 msgstr "Logaritmo de la Proporción de Riesgos"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Risk difference"
 msgstr "Diferencia de riesgos"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Log incidence rate ratio"
-msgstr ""
+msgstr "Logaritmo de la Proporción de Tasas de Incidencias"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Incidence rate difference"
-msgstr ""
+msgstr "Diferencia de Tasas de Incidencias"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Study Labels"
 msgstr "Etiquetas de Estudios"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid ""
 "Variable containing labels for the studies. Used for labeling outputs and "
@@ -8384,12 +8271,10 @@ msgstr ""
 "Variables que contienen las etiquetas para los estudios. Se usa para "
 "etiquetar salidas de resultados y gráficos."
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Subgroup"
 msgstr "Subgrupo"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid ""
 "Variable indicating subgroup stratification. For each subgroup, an "
@@ -8399,21 +8284,18 @@ msgstr ""
 "ajusta un modelo independiente al correspondiente subconjunto del conjunto "
 "de datos."
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Advanced"
 msgstr "Avanzado"
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Advanced options for the meta-analysis."
-msgstr ""
+msgstr "Opciones avanzadas para el Meta-Análisis."
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Show metafor R code"
 msgstr "Mostrar el código de R de metafor"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid ""
 "Display the underlying R code used by the metafor package to fit the model."
@@ -8421,12 +8303,10 @@ msgstr ""
 "Presentar el código subyacente de R utilizado por el paquete metafor para "
 "ajustar el modelo."
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Include full dataset in subgroup analysis"
 msgstr "Incluir el conjunto de datos completo en el análisis de subgrupos"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid ""
 "Include the full dataset output in the subgroup analysis. This option is "
@@ -8438,60 +8318,152 @@ msgstr ""
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Handling of zero frequencies"
-msgstr ""
+msgstr "Manejar las frecuencias nulas"
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Options for handling zero frequencies in the data."
-msgstr ""
+msgstr "Opciones para manejar las frecuencias nulas en los datos."
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Add"
 msgstr "Añadir"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "To"
 msgstr "A"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "All"
 msgstr "Todo"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Only zero"
 msgstr "Solo cero"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "If any zero"
 msgstr "Si algún cero"
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "None"
-msgstr ""
+msgstr "Ninguno"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Drop studies with no cases/events"
 msgstr "Quitar estudios sin ningún caso/evento"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Yes"
 msgstr "Sí"
 
-#, fuzzy
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "No"
 msgstr "No"
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Continuity correction"
-msgstr ""
+msgstr "Corrección de continuidad"
 
 msgctxt "ClassicalMantelHaenszelPetoAdvanced|"
 msgid "Apply continuity correction to Cochran-Mantel-Haenszel test statistic."
+msgstr ""
+"Aplicar la corrección de continuidad al estadístico del contraste de Cochran-"
+"Mantel-Haenszel."
+
+msgctxt "ClassicalMetaAnalysisAdvanced|"
+msgid ""
+"Specify the maximum allowable value of 𝜏² during optimization. Available "
+"only for specific optimization methods and unavailable in multilevel/"
+"multivariate meta-analysis or when heterogeneity model terms are included."
+msgstr ""
+"Especificar el valor máximo admisible para 𝜏² durante la optimización. Solo "
+"disponible para métodos concretos de optimización; y no disponible en Meta-"
+"Análisis multinivel/multivariante ni cuando se incluyen los términos del "
+"modelo de heterogeneidad."
+
+msgctxt "BayesianBinomialMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr "Promediar el Modelo bayesiano"
+
+msgctxt "BayesianBinomialMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
+msgstr ""
+"Especificar qué componentes deben incluirse al promediar el Modelo "
+"bayesiano. Cuando se selecciona, se especifican las distribuciones previas "
+"bajo la presencia y bajo la ausencia de la componente. Esto permite "
+"contrastar la presencia vs. ausencia de la componente (si no se selecciona "
+"una componente, no se realiza un contraste de factores de Bayes). Se "
+"promedian las estimaciones presentadas entre las distribuciones previas nula "
+"y alternativa de todas las componentes especificadas."
+
+msgctxt "BayesianMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr "Promediar el Modelo bayesiano"
+
+msgctxt "BayesianMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
+msgstr ""
+"Especificar qué componentes deben incluirse al promediar el Modelo "
+"bayesiano. Cuando se selecciona, se especifican las distribuciones previas "
+"bajo la presencia y bajo la ausencia de la componente. Esto permite "
+"contrastar la presencia vs. ausencia de la componente (si no se selecciona "
+"una componente, no se realiza un contraste de factores de Bayes). Se "
+"promedian las estimaciones presentadas entre las distribuciones previas nula "
+"y alternativa de todas las componentes especificadas."
+
+msgctxt "EffectSizeComputation|"
+msgid "Group 2/Outcome -"
+msgstr "Grupo 2/Resultado -"
+
+msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
+msgid "Model Variables"
+msgstr "Variables del modelo"
+
+msgctxt "ClassicalMetaAnalysisEstimatedMarginalMeans|"
+msgid "Selected Variables"
+msgstr "Variables seleccionadas"
+
+msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
+msgid "Model Variables"
+msgstr "Variables del modelo"
+
+msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
+msgid "Selected Variables"
+msgstr "Variables seleccionadas"
+
+msgctxt "RobustBayesianMetaAnalysis|"
+msgid "Bayesian Model Averaging"
+msgstr "Promediar el Modelo bayesiano"
+
+msgctxt "RobustBayesianMetaAnalysis|"
+msgid ""
+"Specify which components should be included Bayesian model averaging. If "
+"selected, prior distribution under both the presence and absence of the "
+"component are specified. This allows for testing for the presence vs. "
+"absence of the component (if the component is not selected, a Bayes factor "
+"test is not conducted). The displayed estimates are averaged across null and "
+"alternative prior distributions of all specified components."
+msgstr ""
+"Especificar qué componentes deben incluirse al promediar el Modelo "
+"bayesiano. Cuando se selecciona, se especifican las distribuciones previas "
+"bajo la presencia y bajo la ausencia de la componente. Esto permite "
+"contrastar la presencia vs. ausencia de la componente (si no se selecciona "
+"una componente, no se realiza un contraste de factores de Bayes). Se "
+"promedian las estimaciones presentadas entre las distribuciones previas nula "
+"y alternativa de todas las componentes especificadas."
+
+msgctxt "MetaAnalyticSem|"
+msgid " "
 msgstr ""
