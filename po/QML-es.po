@@ -2691,7 +2691,7 @@ msgstr "LS2"
 
 msgctxt "EffectSizeComputation|"
 msgid "UB"
-msgstr "UB"
+msgstr "LS"
 
 msgctxt "EffectSizeComputation|"
 msgid "AV"
@@ -7142,18 +7142,6 @@ msgstr ""
 "matriz de correlaciones/covarianzas. El nombre de la variable debe tener la "
 "forma `x_y` donde `x` e `y` corresponden a las variables entre las que se "
 "informa de su correlación/covarianza."
-
-msgctxt "MetaAnalyticSem|"
-msgid "_"
-msgstr "_"
-
-msgctxt "MetaAnalyticSem|"
-msgid "."
-msgstr "."
-
-msgctxt "MetaAnalyticSem|"
-msgid "-"
-msgstr "-"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Available variable names"

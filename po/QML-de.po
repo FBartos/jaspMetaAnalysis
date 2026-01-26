@@ -2387,31 +2387,31 @@ msgstr ""
 
 msgctxt "EffectSizeComputation|"
 msgid "ZSPCOR"
-msgstr ""
+msgstr "ZSPCOR"
 
 msgctxt "EffectSizeComputation|"
 msgid "R2"
-msgstr ""
+msgstr "R2"
 
 msgctxt "EffectSizeComputation|"
 msgid "ZR2"
-msgstr ""
+msgstr "ZR2"
 
 msgctxt "EffectSizeComputation|"
 msgid "REH"
-msgstr ""
+msgstr "REH"
 
 msgctxt "EffectSizeComputation|"
 msgid "Group 1/Outcome +"
-msgstr ""
+msgstr "Gruppe 1/Ergebnis +"
 
 msgctxt "EffectSizeComputation|"
 msgid "Time 1/Outcome +"
-msgstr ""
+msgstr "Zeit 1/Ergebnis +"
 
 msgctxt "EffectSizeComputation|"
 msgid "Outcome +/+"
-msgstr ""
+msgstr "Ergebnis +/+"
 
 msgctxt "EffectSizeComputation|"
 msgid "Coefficient α"
@@ -2423,15 +2423,15 @@ msgstr "Homozygot dominante Allele"
 
 msgctxt "EffectSizeComputation|"
 msgid "Group 1/Outcome -"
-msgstr ""
+msgstr "Gruppe 1/Ergebnis -"
 
 msgctxt "EffectSizeComputation|"
 msgid "Time 1/Outcome -"
-msgstr ""
+msgstr "Zeit 1/Ergebnis -"
 
 msgctxt "EffectSizeComputation|"
 msgid "Outcome +/-"
-msgstr ""
+msgstr "Ergebnis +/-"
 
 msgctxt "EffectSizeComputation|"
 msgid "Heterozygous Alleles"
@@ -2439,15 +2439,15 @@ msgstr "Heterozygote Allele"
 
 msgctxt "EffectSizeComputation|"
 msgid "Group 2/Outcome +"
-msgstr ""
+msgstr "Gruppe 2/Ergebnis +"
 
 msgctxt "EffectSizeComputation|"
 msgid "Time 2/Outcome +"
-msgstr ""
+msgstr "Zeit 2/Ergebnis +"
 
 msgctxt "EffectSizeComputation|"
 msgid "Outcome -/+"
-msgstr ""
+msgstr "Ergebnis -/+"
 
 msgctxt "EffectSizeComputation|"
 msgid "Homozygous Recessive Alleles"
@@ -2455,31 +2455,31 @@ msgstr "Homozygot rezessive Allele"
 
 msgctxt "EffectSizeComputation|"
 msgid "Time 2/Outcome -"
-msgstr ""
+msgstr "Zeit 2/Ergebnis -"
 
 msgctxt "EffectSizeComputation|"
 msgid "Outcome -/-"
-msgstr ""
+msgstr "Ergebnis -/-"
 
 msgctxt "EffectSizeComputation|"
 msgid "Outcome +/+ and +/-"
-msgstr ""
+msgstr "Ergebnis +/+ und +/-"
 
 msgctxt "EffectSizeComputation|"
 msgid "Outcome -/+ and -/-"
-msgstr ""
+msgstr "Ergebnis -/+ und -/-"
 
 msgctxt "EffectSizeComputation|"
 msgid "Events Group 1"
-msgstr ""
+msgstr "Ereignisse Gruppe 1"
 
 msgctxt "EffectSizeComputation|"
 msgid "Events"
-msgstr ""
+msgstr "Ereignisse"
 
 msgctxt "EffectSizeComputation|"
 msgid "Non-Events"
-msgstr ""
+msgstr "Nicht-Ereignisse"
 
 msgctxt "EffectSizeComputation|"
 msgid "Items"
@@ -2491,15 +2491,15 @@ msgstr "Prädiktoren"
 
 msgctxt "EffectSizeComputation|"
 msgid "Events Group 2"
-msgstr ""
+msgstr "Ereignisse Gruppe 2"
 
 msgctxt "EffectSizeComputation|"
 msgid "Person-Time Group 1"
-msgstr ""
+msgstr "Person-Zeit Gruppe 1"
 
 msgctxt "EffectSizeComputation|"
 msgid "Person-Time"
-msgstr ""
+msgstr "Person-Zeit"
 
 msgctxt "EffectSizeComputation|"
 msgid "Person-Time Group 2"
@@ -4590,7 +4590,7 @@ msgstr ""
 
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Study Level (Multilevel)"
-msgstr ""
+msgstr "Studien-Ebene (Multilevel)"
 
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid ""
@@ -4599,6 +4599,11 @@ msgid ""
 "to specify the model structure and to account for the correlation between "
 "the effect sizes within each study."
 msgstr ""
+"Variable zur Angabe der Studienebenen-Verschachtelung. Diese Variable wird "
+"verwendet, um die Verschachtelung der Studien in der Metaanalyse anzugeben. "
+"Die Verschachtelung dient zur Angabe der Modellstruktur und zur "
+"Berücksichtigung der Korrelation zwischen den Effektstärken innerhalb jeder "
+"Studie."
 
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Subgroup"
@@ -4612,7 +4617,6 @@ msgstr ""
 "Variable zur Angabe der Untergruppeneinteilung. Für jede Untergruppe wird "
 "ein unabhängiges Modell an die entsprechende Datensatz-Untermenge angepasst."
 
-#, fuzzy
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Effect size"
 msgstr "Effektstärke"
@@ -4665,6 +4669,7 @@ msgid ""
 "Specify the type of prior distributions for the effect size and "
 "heterogeneity."
 msgstr ""
+"Angabe der Art von Prior-Verteilungen für die Effektstärke und Heterogenität."
 
 msgctxt "BayesianBinomialMetaAnalysis|"
 msgid "Default"
@@ -4745,7 +4750,7 @@ msgstr ""
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Effect size measure"
-msgstr ""
+msgstr "Effektstärkemaß"
 
 msgctxt "BayesianMetaAnalysis|"
 msgid ""
@@ -4760,7 +4765,7 @@ msgstr ""
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Standardized mean difference such as Cohen's d, Hedge's g"
-msgstr ""
+msgstr "Standardisierte mittlere Differenz, wie Cohens d, Hedges g"
 
 #, fuzzy
 msgctxt "BayesianMetaAnalysis|"
@@ -4769,11 +4774,11 @@ msgstr "Fishers z"
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Fisher's z transformation of correlation coefficients"
-msgstr ""
+msgstr "Fishers Z-Transformation von Korrelationskoeffizienten"
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Log odds ratio"
-msgstr ""
+msgstr "Log-Chancenverhältnis"
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Log risk ratio"
@@ -4814,7 +4819,7 @@ msgstr ""
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Study Level (Multilevel)"
-msgstr ""
+msgstr "Studien-Ebene (Multilevel)"
 
 msgctxt "BayesianMetaAnalysis|"
 msgid ""
@@ -4823,6 +4828,11 @@ msgid ""
 "to specify the model structure and to account for the correlation between "
 "the effect sizes within each study."
 msgstr ""
+"Variable zur Angabe der Studienebenen-Verschachtelung. Diese Variable wird "
+"verwendet, um die Verschachtelung der Studien in der Metaanalyse anzugeben. "
+"Die Verschachtelung dient zur Angabe der Modellstruktur und zur "
+"Berücksichtigung der Korrelation zwischen den Effektstärken innerhalb jeder "
+"Studie."
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Subgroup"
@@ -4890,6 +4900,7 @@ msgid ""
 "Specify the type of prior distributions for the effect size and "
 "heterogeneity."
 msgstr ""
+"Angabe der Art von Prior-Verteilungen für die Effektstärke und Heterogenität."
 
 msgctxt "BayesianMetaAnalysis|"
 msgid "Default"
@@ -5651,7 +5662,7 @@ msgstr ""
 
 msgctxt "ForestPlot|"
 msgid "Conditional estimates"
-msgstr ""
+msgstr "Konditionale Schätzungen"
 
 msgctxt "ForestPlot|"
 msgid ""
@@ -6196,12 +6207,10 @@ msgid ""
 "model."
 msgstr ""
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
 msgid "Add adjusted estimate"
 msgstr "Korrigierte Schätzung hinzufügen"
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisEstimatedMarginalMeans|"
 msgid ""
 "Include the adjusted effect estimate, which accounts for the moderators in "
@@ -6325,11 +6334,11 @@ msgstr ""
 
 msgctxt "RobustBayesianMetaAnalysisInference|"
 msgid "Credible intervals"
-msgstr ""
+msgstr "Glaubwürdigkeitsintervalle"
 
 msgctxt "RobustBayesianMetaAnalysisInference|"
 msgid "Include credible intervals in the tabular output."
-msgstr ""
+msgstr "Glaubwürdigkeitsintervalle zur tabellarischen Ausgabe hinzufügen."
 
 msgctxt "RobustBayesianMetaAnalysisInference|"
 msgid "Prediction intervals"
@@ -6341,7 +6350,7 @@ msgstr "Vorhersageintervalle in tabellarischer Ausgabe hinzufügen."
 
 msgctxt "RobustBayesianMetaAnalysisInference|"
 msgid "Conditional estimates"
-msgstr ""
+msgstr "Konditionale Schätzungen"
 
 msgctxt "RobustBayesianMetaAnalysisInference|"
 msgid ""
@@ -6456,7 +6465,6 @@ msgctxt "RobustBayesianMetaAnalysisModel|"
 msgid "Model"
 msgstr "Modell"
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisModel|"
 msgid ""
 "Options for specifing the effect size and heterogeneity models based on the "
@@ -6474,7 +6482,6 @@ msgctxt "RobustBayesianMetaAnalysisModel|"
 msgid "Specify the effect size model."
 msgstr ""
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysisModel|"
 msgid "Available Components"
 msgstr "Verfügbare Komponenten"
@@ -6769,38 +6776,24 @@ msgid ""
 msgstr ""
 
 msgctxt "MetaAnalyticSem|"
-msgid "_"
-msgstr ""
-
-msgctxt "MetaAnalyticSem|"
-msgid "."
-msgstr ""
-
-msgctxt "MetaAnalyticSem|"
-msgid "-"
-msgstr ""
-
-msgctxt "MetaAnalyticSem|"
-msgid " "
-msgstr ""
-
-msgctxt "MetaAnalyticSem|"
 msgid "Available variable names"
-msgstr ""
+msgstr "Verfügbare Variablennamen"
 
 msgctxt "MetaAnalyticSem|"
 msgid ""
 "Show a summary of the available variable names in the correlation/covariance "
 "matrix input."
 msgstr ""
+"Anzeige einer Zusammenfassung der verfügbaren Variablennamen in der "
+"Korrelations-/Kovarianzmatrixeingabe."
 
 msgctxt "MetaAnalyticSem|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptiv"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Number of estimates"
-msgstr ""
+msgstr "Anzahl Schätzungen"
 
 msgctxt "MetaAnalyticSem|"
 msgid ""
@@ -6810,13 +6803,15 @@ msgstr ""
 
 msgctxt "MetaAnalyticSem|"
 msgid "Number of observations"
-msgstr ""
+msgstr "Anzahl Beobachtungen"
 
 msgctxt "MetaAnalyticSem|"
 msgid ""
 "Show a frequency table of the observations in the correlation/covariance "
 "matrix input."
 msgstr ""
+"Zeige eine Häufigkeitstabelle der Beobachtungen in der Korrelations-/"
+"Kovarianzmatrixeingabe."
 
 msgctxt "MetaAnalyticSem|"
 msgid "Pooled correlation/covariance matrix"
@@ -6838,11 +6833,11 @@ msgstr "Diagonal"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Symmetric"
-msgstr ""
+msgstr "Symmetrisch"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Zero"
-msgstr ""
+msgstr "Null"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Type of the random effects of the correlation or covariance vectors."
@@ -6850,25 +6845,27 @@ msgstr ""
 
 msgctxt "MetaAnalyticSem|"
 msgid "Model 1"
-msgstr ""
+msgstr "Modell 1"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Specify model using a lavaan style syntax."
-msgstr ""
+msgstr "Modellangabe mit Syntax im lavaan-Stil."
 
 msgctxt "MetaAnalyticSem|"
 msgid "Model Settings"
-msgstr ""
+msgstr "Modell-Einstellungen"
 
 msgctxt "MetaAnalyticSem|"
 msgid "Fix latent variance to 1"
-msgstr ""
+msgstr "Latente Varianz auf 1 fixieren"
 
 msgctxt "MetaAnalyticSem|"
 msgid ""
 "Fix the variance of latent variables to 1. Only available for covariance "
 "input."
 msgstr ""
+"Die Varianz der latenten Variablen auf 1 fixieren. Nur verfügbar für "
+"Kovarianz-Eingabe."
 
 msgctxt "MetaAnalyticSem|"
 msgid "Random Effects"
@@ -7038,11 +7035,11 @@ msgstr ""
 
 msgctxt "SemBasedMetaAnalysis|"
 msgid "Model 1"
-msgstr ""
+msgstr "Modell 1"
 
 msgctxt "SemBasedMetaAnalysis|"
 msgid "Specify model using a lavaan style syntax."
-msgstr ""
+msgstr "Modell mit Syntax im lavaan-Stil angeben."
 
 msgctxt "SemBasedMetaAnalysis|"
 msgid "Pairwise model comparison"
@@ -7230,15 +7227,15 @@ msgstr "Stichprobenumfang Gruppe 2"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Events Group 1"
-msgstr ""
+msgstr "Ereignisse Gruppe 1"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Events Group 2"
-msgstr ""
+msgstr "Ereignisse Gruppe 2"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Person-Time Group 1"
-msgstr ""
+msgstr "Person-Zeit Gruppe 1"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Person-Time Group 2"
@@ -7266,7 +7263,7 @@ msgstr ""
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Effect size measure"
-msgstr ""
+msgstr "Effektstärkemaß"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Select the effect size measure to be used in the meta-analysis."
@@ -7274,7 +7271,7 @@ msgstr ""
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Log odds ratio"
-msgstr ""
+msgstr "Log-Chancenverhältnis"
 
 msgctxt "ClassicalMantelHaenszelPeto|"
 msgid "Log risk ratio"
@@ -7572,17 +7569,14 @@ msgid ""
 "detailed introduction to the module."
 msgstr ""
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "References"
 msgstr "Referenzen"
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "R Packages"
 msgstr "R-Pakete"
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Effect Size"
 msgstr "Effektstärke"
@@ -7591,7 +7585,6 @@ msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Variable containing the observed effect sizes."
 msgstr "Variable, die die beobachteten Effektstärken enthält."
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Effect Size Standard Error"
 msgstr "Effektstärke Standardfehler"
@@ -7604,7 +7597,7 @@ msgstr ""
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Effect size measure"
-msgstr ""
+msgstr "Effektstärkemaß"
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid ""
@@ -7619,20 +7612,19 @@ msgstr ""
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Standardized mean difference such as Cohen's d, Hedge's g"
-msgstr ""
+msgstr "Standardisierte mittlere Differenz, wie Cohens d, Hedges g"
 
-#, fuzzy
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Fisher's z"
 msgstr "Fishers z"
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Fisher's z transformation of correlation coefficients"
-msgstr ""
+msgstr "Fishers Z-Transformation von Korrelationskoeffizienten"
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Log odds ratio"
-msgstr ""
+msgstr "Log-Chancenverhältnis"
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Log risk ratio"
@@ -7670,7 +7662,7 @@ msgstr ""
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid "Study Level (Multilevel)"
-msgstr ""
+msgstr "Studien-Ebene (Multilevel)"
 
 msgctxt "RobustBayesianMetaAnalysis|"
 msgid ""
@@ -7778,6 +7770,7 @@ msgid ""
 "Specify the type of prior distributions for the effect size and "
 "heterogeneity."
 msgstr ""
+"Angabe der Art von Prior-Verteilungen für die Effektstärke und Heterogenität."
 
 #, fuzzy
 msgctxt "RobustBayesianMetaAnalysis|"
