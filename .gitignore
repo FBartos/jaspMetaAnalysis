@@ -52,3 +52,5 @@ renv/activate.R
 .Rprofile
 /.vs
 /.StatsVault
+knowledge-base/*
+.positai

@@ -1,5 +1,6 @@
 ---
 applyTo: "**/R/*.R"
+description: "R function structure, validation, jaspResults API, output components, style conventions"
 ---
 
 # R Instructions
@@ -160,6 +161,19 @@ Cache computed results across reruns (while dependencies hold).
 - **Performance:** Read only needed columns; postpone decoding; reuse `createJaspState()` when multiple outputs share results.
 - **Robustness:** Validate early; guard long loops with `if (!ready) return()`; wrap risky code in `try()` and call `$setError()`.
 - **Reproducibility:** Set column formats explicitly in tables; document assumptions in footnotes/citations.
+- **Assignment alignment:** 
+For related assignments allign them at the arrow `<-`, i.e.,
+```
+variableOne  <- foo()
+variableFive <- foo()
+```
+and allign function arguments in the similar way for function whose call is too long to be on a single line:
+```
+out <- foo(
+	argumentOne  = variableOne,
+	argumentFive = variableFive,
+	... 
+)
 
 ---
 

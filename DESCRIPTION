@@ -1,7 +1,7 @@
 Package: jaspMetaAnalysis
 Type: Package
 Title: Meta-Analysis Module for JASP
-Version: 0.95.5
+Version: 0.96.5
 Date: 2022-10-05
 Author: JASP Team
 Website: jasp-stats.org
@@ -19,6 +19,7 @@ Imports:
   metaBMA (>= 0.6.3),
   metafor,
   metaSEM,
+  lme4,
   psych,
   purrr,
   rstan,
@@ -31,10 +32,14 @@ Imports:
   metamisc (>= 0.2.5),
   ggmcmc,
   pema,
+  robvis,
   clubSandwich,
   CompQuadForm,
   sp,
+  BiasedUrn,
   dfoptim,
+  minqa,
+  nloptr,
   nleqslv,
   patchwork
 Remotes:

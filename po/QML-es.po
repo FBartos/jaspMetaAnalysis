@@ -110,7 +110,7 @@ msgstr "Tabla ANOVA"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Fit Indices"
-msgstr "Índices de Ajuste"
+msgstr "Índices de ajuste"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Coefficients"
@@ -170,7 +170,7 @@ msgstr "Contraste de correlación por rangos"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Egger's Regression test"
-msgstr "Contraste de Regresión de Egger"
+msgstr "Contraste de regresión de Egger"
 
 msgctxt "MultilevelMetaAnalysis|"
 msgid "Fail-safe-N analysis (controversial)"
@@ -482,11 +482,11 @@ msgstr "Cauchy"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "location:"
-msgstr "posición:"
+msgstr "Posición:"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "scale:"
-msgstr "escala:"
+msgstr "Escala:"
 
 msgctxt "BayesianMetaAnalysisPriors|"
 msgid "Normal"
@@ -994,7 +994,7 @@ msgstr "máx:"
 
 msgctxt "PredictionPerformancePriors|"
 msgid "location:"
-msgstr "posición:"
+msgstr "Posición:"
 
 msgctxt "PredictionPerformancePriors|"
 msgid "scale:"
@@ -1430,7 +1430,7 @@ msgstr "Ampliar las muestras"
 
 msgctxt "RobustBayesianMetaAnalysisBaseline|"
 msgid "Baseline"
-msgstr "Base"
+msgstr "Referencia"
 
 msgctxt "RobustBayesianMetaAnalysisBaseline|"
 msgid "Baseline (null)"
@@ -4566,7 +4566,7 @@ msgctxt "ClassicalMetaAnalysisMultilevelMultivariate|"
 msgid ""
 "Variable specifying the time point of the effect size measurement. In case "
 "multiple time points are specified, the first time corresponds to the first "
-"codntion."
+"condition."
 msgstr ""
 "Variable que indica el punto temporal de la medida de la magnitud del "
 "efecto. En caso de indicarse múltiples puntos temporales, el primer momento "

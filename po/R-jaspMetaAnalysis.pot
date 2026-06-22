@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: jaspMetaAnalysis 0.95.5\n"
-"POT-Creation-Date: 2025-11-15 02:55\n"
+"Project-Id-Version: jaspMetaAnalysis 0.96.4\n"
+"POT-Creation-Date: 2026-04-25 03:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1091,7 +1091,7 @@ msgstr ""
 msgid "Total events"
 msgstr ""
 
-msgid "Cannot compute outcomes. Chech that all of the required information is specified via the appropriate arguments (i.e. an Effect Size and either Standard Error, Sampling Variance, or 95%% Confidence Interval)."
+msgid "Cannot compute outcomes. Check that all of the required information is specified via the appropriate arguments (i.e. an Effect Size and either Standard Error, Sampling Variance, or 95%% Confidence Interval)."
 msgstr ""
 
 msgid "Step"
