@@ -19,10 +19,12 @@
 
 SemBasedMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
 
-  # set OpenMx options
-  # the JASP options() cleanup does not properly re-sets OpenMx settings
-  # consequently, the fitting function crashes with matrix(byrow) error
-  OpenMx::mxSetDefaultOptions()
+  # JASP restoreOptions() NULLs OpenMx globals after each analysis (mxByrow,
+  # mxOptions, ...) while leaving OpenMx loaded. Restore before metaSEM loads.
+  # Then attach metaSEM (and OpenMx via Depends): mxRun evaluates algebras
+  # in the global env and needs OpenMx on the search path.
+  .masemMxOptions()
+  library(metaSEM)
 
   # read the data set
   dataset <- .masemReadData(dataset)
@@ -152,9 +154,11 @@ SemBasedMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
 .semmetaFitModelsFun          <- function(model, dataset, options) {
 
   # prepare RAM
+  # std.lv = FALSE: do not force latent variances to 1. If needed, specify f ~~ 1*f in syntax.
   tempRam <- try(metaSEM::lavaan2RAM(
     model         = model[["syntax"]][["model"]],
-    obs.variables = .masemGetObservedVariables(model)
+    obs.variables = .masemGetObservedVariables(model),
+    std.lv        = FALSE
   ))
 
   # fit SEM
@@ -333,7 +337,7 @@ SemBasedMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
         status = ""
       )
       if (jaspBase::isTryError(tempFit))
-        modelFitTable$addFootnote(gettextf("%1$s fit failed with the following message %2$s.", model[["value"]], tempFit))
+        modelConvergenceTable$addFootnote(gettextf("%1$s fit failed with the following message %2$s.", model[["value"]], tempFit))
     } else {
 
       tempSummary <- summary(tempFit)
@@ -417,7 +421,7 @@ SemBasedMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
     model <- options[["models"]][[i]]
 
     # get output container
-    tempOutputContainer <- .masemGetModelOutputContainer(jaspResults, model[["value"]], i)
+    tempOutputContainer <- .masemGetModelOutputContainer(jaspResults, model[["value"]], i, MASEM)
 
     # check if the plot already exists
     if (!is.null(tempOutputContainer[["pathDiagram"]]))
@@ -463,7 +467,7 @@ SemBasedMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
       tempFit <- fits[[model[["value"]]]]
 
       if (is.null(tempFit))
-        return()
+        next
 
       # check if the model fit failed
       if (jaspBase::isTryError(tempFit)) {
@@ -767,12 +771,10 @@ SemBasedMetaAnalysis <- function(jaspResults, dataset, options, state = NULL) {
 }
 .masemGetObservedVariables <- function(model) {
 
-  observedVariables <- c(
-    model$syntax$columns,
-    model$syntax$prefixedColumns$data.
-  )
-  observedVariables <- encodeColNames(observedVariables)
-  return()
+  # Only actual observed variables. prefixedColumns$data. are definition
+  # variables (data.vi labels), not names in lavaan2RAM's observed set.
+  observedVariables <- encodeColNames(model$syntax$columns)
+  return(observedVariables)
 }
 .masemGetRandomEffectsType <- function(type) {
   return(switch(

@@ -8735,7 +8735,7 @@ msgstr "Izquierda"
 
 msgctxt "ForestPlotEstimateInformation|"
 msgid "Middle"
-msgstr "Medio"
+msgstr "En medio"
 
 msgctxt "ForestPlotEstimateInformation|"
 msgid "Right"
@@ -9121,7 +9121,7 @@ msgstr "Izquierda"
 
 msgctxt "ForestPlotSettings|"
 msgid "Middle"
-msgstr "Medio"
+msgstr "En medio"
 
 msgctxt "ForestPlotSettings|"
 msgid "Right"
@@ -9382,7 +9382,7 @@ msgstr "Izquierda"
 
 msgctxt "ForestPlotStudyInformation|"
 msgid "Middle"
-msgstr "Medio"
+msgstr "En medio"
 
 msgctxt "ForestPlotStudyInformation|"
 msgid "Right"

@@ -13,6 +13,12 @@
 >   * **Deprecated / Removed:** Outdated analyses, options, or legacy code.
 
 ---
+# jaspMetaAnalysis 0.97.2
+## Fixed
+* Meta-analytic SEM failing to load because JASP wipes OpenMx `mxOptions` before `metaSEM` `.onLoad`.
+* Model convergence table crashing on failed fits (`modelFitTable` not found).
+* SEM-based meta-analysis forcing `std.lv = TRUE` in `lavaan2RAM()` and passing definition-variable columns as `obs.variables`.
+
 # jaspMetaAnalysis 0.97.1
 ## Changed
 * Reorganized the R backend into smaller, purpose-specific files and consolidated duplicated helpers without changing analysis behavior or output.
